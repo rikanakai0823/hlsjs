@@ -1,0 +1,1264 @@
+<!DOCTYPE html><html><head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/hls.ts | hls.js</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="JavaScript HLS client using MediaSourceExtension"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="hls.js"><meta property="twitter:description" content="JavaScript HLS client using MediaSourceExtension"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/video-dev/hls.js"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hls.ts~Hls.html">Hls</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/task-loop.ts~TaskLoop.html">TaskLoop</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-enableStreamingMode">enableStreamingMode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mergeConfig">mergeConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-changeTypeSupported">changeTypeSupported</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isSupported">isSupported</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hlsDefaultConfig">hlsDefaultConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ErrorDetail">ErrorDetail</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controller">controller</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/abr-controller.ts~AbrController.html">AbrController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/audio-stream-controller.ts~AudioStreamController.html">AudioStreamController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/audio-track-controller.ts~AudioTrackController.html">AudioTrackController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/base-playlist-controller.ts~BasePlaylistController.html">BasePlaylistController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/base-stream-controller.ts~BaseStreamController.html">BaseStreamController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/buffer-controller.ts~BufferController.html">BufferController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/buffer-operation-queue.ts~BufferOperationQueue.html">BufferOperationQueue</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/cap-level-controller.ts~CapLevelController.html">CapLevelController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/cmcd-controller.ts~CMCDController.html">CMCDController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/eme-controller.ts~EMEController.html">EMEController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/fps-controller.ts~FPSController.html">FPSController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/fragment-tracker.ts~FragmentTracker.html">FragmentTracker</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/gap-controller.ts~GapController.html">GapController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/id3-track-controller.ts~ID3TrackController.html">ID3TrackController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/latency-controller.ts~LatencyController.html">LatencyController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/level-controller.ts~LevelController.html">LevelController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/stream-controller.ts~StreamController.html">StreamController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/subtitle-stream-controller.ts~SubtitleStreamController.html">SubtitleStreamController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/subtitle-track-controller.ts~SubtitleTrackController.html">SubtitleTrackController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controller/timeline-controller.ts~TimelineController.html">TimelineController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-findFragWithCC">findFragWithCC</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-findFragmentByPDT">findFragmentByPDT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-findFragmentByPTS">findFragmentByPTS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fragmentWithinToleranceTest">fragmentWithinToleranceTest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-pdtWithinToleranceTest">pdtWithinToleranceTest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-addGroupId">addGroupId</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-addSliding">addSliding</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-adjustSliding">adjustSliding</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-assignTrackIdsByGroup">assignTrackIdsByGroup</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-computeReloadInterval">computeReloadInterval</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getFragmentWithSN">getFragmentWithSN</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPartWith">getPartWith</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mapFragmentIntersection">mapFragmentIntersection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mapPartIntersection">mapPartIntersection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mergeDetails">mergeDetails</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-updateFragPTSDTS">updateFragPTSDTS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-updatePTS">updatePTS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-State">State</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-MAX_START_GAP_JUMP">MAX_START_GAP_JUMP</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SKIP_BUFFER_HOLE_STEP_SECONDS">SKIP_BUFFER_HOLE_STEP_SECONDS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SKIP_BUFFER_RANGE_START">SKIP_BUFFER_RANGE_START</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-STALL_MINIMUM_DURATION_MS">STALL_MINIMUM_DURATION_MS</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#crypt">crypt</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/crypt/aes-crypto.ts~AESCrypto.html">AESCrypto</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/crypt/aes-decryptor.ts~AESDecryptor.html">AESDecryptor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/crypt/decrypter.ts~Decrypter.html">Decrypter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/crypt/fast-aes-key.ts~FastAESKey.html">FastAESKey</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removePadding">removePadding</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#demux">demux</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/demux/aacdemuxer.ts~AACDemuxer.html">AACDemuxer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/demux/base-audio-demuxer.ts~BaseAudioDemuxer.html">BaseAudioDemuxer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/demux/chunk-cache.ts~ChunkCache.html">ChunkCache</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/demux/exp-golomb.ts~ExpGolomb.html">ExpGolomb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/demux/mp3demuxer.ts~MP3Demuxer.html">MP3Demuxer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/demux/mp4demuxer.ts~MP4Demuxer.html">MP4Demuxer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/demux/sample-aes.ts~SampleAesDecrypter.html">SampleAesDecrypter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/demux/transmuxer-interface.ts~TransmuxerInterface.html">TransmuxerInterface</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/demux/transmuxer.ts~TransmuxConfig.html">TransmuxConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/demux/transmuxer.ts~TransmuxState.html">TransmuxState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/demux/transmuxer.ts~Transmuxer.html">Transmuxer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/demux/tsdemuxer.ts~TSDemuxer.html">TSDemuxer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-appendFrame">appendFrame</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-canGetFrameLength">canGetFrameLength</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-canParse">canParse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getAudioConfig">getAudioConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getFrameDuration">getFrameDuration</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getFullFrameLength">getFullFrameLength</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getHeaderLength">getHeaderLength</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-initTrackConfig">initTrackConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isHeader">isHeader</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isHeaderPattern">isHeaderPattern</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseFrameHeader">parseFrameHeader</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-probe">probe</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-initPTSFn">initPTSFn</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dummyTrack">dummyTrack</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-canParse">canParse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-decodeFrame">decodeFrame</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getID3Data">getID3Data</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getID3Frames">getID3Frames</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getTimeStamp">getTimeStamp</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isFooter">isFooter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isHeader">isHeader</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isTimeStampFrame">isTimeStampFrame</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-utf8ArrayToStr">utf8ArrayToStr</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-appendFrame">appendFrame</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-canParse">canParse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isHeader">isHeader</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isHeaderPattern">isHeaderPattern</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseHeader">parseHeader</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-probe">probe</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-TransmuxerWorker">TransmuxerWorker</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isPromise">isPromise</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-webworkifywebpack">webworkifywebpack</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-testables">testables</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loader">loader</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/loader/date-range.ts~DateRange.html">DateRange</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/loader/fragment-loader.ts~FragmentLoader.html">FragmentLoader</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/loader/fragment-loader.ts~LoadError.html">LoadError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/loader/fragment.ts~BaseSegment.html">BaseSegment</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/loader/fragment.ts~Fragment.html">Fragment</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/loader/fragment.ts~Part.html">Part</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/loader/key-loader.ts~KeyLoader.html">KeyLoader</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/loader/level-details.ts~LevelDetails.html">LevelDetails</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/loader/level-key.ts~LevelKey.html">LevelKey</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/loader/load-stats.ts~LoadStats.html">LoadStats</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/loader/m3u8-parser.ts~M3U8Parser.html">M3U8Parser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/loader/playlist-loader.ts~PlaylistLoader.html">PlaylistLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#performance">performance</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/performance/performance-monitor.ts~PerformanceMonitor.html">PerformanceMonitor</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#polyfills">polyfills</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-MAX_SAFE_INTEGER">MAX_SAFE_INTEGER</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isFiniteNumber">isFiniteNumber</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#remux">remux</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/remux/aac-helper.ts~AAC.html">AAC</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/remux/mp4-generator.ts~MP4.html">MP4</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/remux/mp4-remuxer.ts~MP4Remuxer.html">MP4Remuxer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/remux/passthrough-remuxer.ts~PassThroughRemuxer.html">PassThroughRemuxer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-flushTextTrackMetadataCueSamples">flushTextTrackMetadataCueSamples</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-flushTextTrackUserdataCueSamples">flushTextTrackUserdataCueSamples</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-normalizePts">normalizePts</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#types">types</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/types/level.ts~HlsUrlParameters.html">HlsUrlParameters</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/types/level.ts~Level.html">Level</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/types/transmuxer.ts~ChunkMetadata.html">ChunkMetadata</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getSkipValue">getSkipValue</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CMCDVersion">CMCDVersion</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-HdcpLevels">HdcpLevels</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/utils/attr-list.ts~AttrList.html">AttrList</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/utils/buffer-helper.ts~BufferHelper.html">BufferHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/utils/cea-608-parser.ts~CaptionScreen.html">CaptionScreen</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/utils/cea-608-parser.ts~Cea608Parser.html">Cea608Parser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/utils/cea-608-parser.ts~Row.html">Row</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/utils/chunker.ts~Chunker.html">Chunker</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/utils/ewma-bandwidth-estimator.ts~EwmaBandWidthEstimator.html">EwmaBandWidthEstimator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/utils/ewma.ts~EWMA.html">EWMA</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/utils/fetch-loader.ts~FetchLoader.html">FetchLoader</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/utils/output-filter.ts~OutputFilter.html">OutputFilter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/utils/vttparser.ts~VTTParser.html">VTTParser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/utils/xhr-loader.ts~XhrLoader.html">XhrLoader</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isCodecSupportedInMp4">isCodecSupportedInMp4</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isCodecType">isCodecType</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-adjustSlidingStart">adjustSlidingStart</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-alignMediaPlaylistByPDT">alignMediaPlaylistByPDT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-alignPDT">alignPDT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-alignStream">alignStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-findDiscontinuousReferenceFrag">findDiscontinuousReferenceFrag</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-findFirstFragWithCC">findFirstFragWithCC</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-shouldAlignOnDiscontinuities">shouldAlignOnDiscontinuities</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fetchSupported">fetchSupported</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseIMSC1">parseIMSC1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-changeEndianness">changeEndianness</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-convertDataUriToArrayBytes">convertDataUriToArrayBytes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-strToUtf8array">strToUtf8array</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-enableLogs">enableLogs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getKeySystemsForConfig">getKeySystemsForConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getSupportedMediaKeySystemConfigurations">getSupportedMediaKeySystemConfigurations</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-keySystemDomainToKeySystemFormat">keySystemDomainToKeySystemFormat</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-keySystemFormatToKeySystemDomain">keySystemFormatToKeySystemDomain</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-keySystemIdToKeySystemDomain">keySystemIdToKeySystemDomain</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getMediaSource">getMediaSource</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-appendUint8Array">appendUint8Array</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-bin2str">bin2str</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-computeRawDurationFromSamples">computeRawDurationFromSamples</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-discardEPB">discardEPB</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-findBox">findBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getDuration">getDuration</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getStartDTS">getStartDTS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mp4Box">mp4Box</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mp4pssh">mp4pssh</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-offsetStartDTS">offsetStartDTS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseEmsg">parseEmsg</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseInitSegment">parseInitSegment</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parsePssh">parsePssh</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseSEIMessageFromNALu">parseSEIMessageFromNALu</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseSamples">parseSamples</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseSegmentIndex">parseSegmentIndex</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseSinf">parseSinf</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-patchEncyptionData">patchEncyptionData</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-readSint32">readSint32</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-readUint16">readUint16</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-readUint32">readUint32</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-segmentValidRange">segmentValidRange</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-writeUint32">writeUint32</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-base64Decode">base64Decode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-base64DecodeToStr">base64DecodeToStr</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-base64Encode">base64Encode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-base64ToBase64Url">base64ToBase64Url</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-base64UrlEncode">base64UrlEncode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-strToBase64Encode">strToBase64Encode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-addCueToTrack">addCueToTrack</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clearCurrentCues">clearCurrentCues</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getCuesInRange">getCuesInRange</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-removeCuesInRange">removeCuesInRange</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sendAddTrackEvent">sendAddTrackEvent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-toMpegTsClockFromTimescale">toMpegTsClockFromTimescale</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-toMsFromMpegTsClock">toMsFromMpegTsClock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-toTimescaleFromBase">toTimescaleFromBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-toTimescaleFromScale">toTimescaleFromScale</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sliceUint8">sliceUint8</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fixLineBreaks">fixLineBreaks</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseTimeStamp">parseTimeStamp</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-generateCueId">generateCueId</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseWebVTT">parseWebVTT</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-BinarySearch">BinarySearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Cues">Cues</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Hex">Hex</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-IMSC1_CODEC">IMSC1_CODEC</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-logger">logger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-requestMediaKeySystemAccess">requestMediaKeySystemAccess</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RemuxerTrackIdConfig">RemuxerTrackIdConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-TimeRanges">TimeRanges</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/hls.ts</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import * as URLToolkit from 'url-toolkit';
+import PlaylistLoader from './loader/playlist-loader';
+import ID3TrackController from './controller/id3-track-controller';
+import LatencyController from './controller/latency-controller';
+import LevelController from './controller/level-controller';
+import { FragmentTracker } from './controller/fragment-tracker';
+import KeyLoader from './loader/key-loader';
+import StreamController from './controller/stream-controller';
+import { isSupported } from './is-supported';
+import { logger, enableLogs } from './utils/logger';
+import { enableStreamingMode, hlsDefaultConfig, mergeConfig } from './config';
+import { EventEmitter } from 'eventemitter3';
+import { Events } from './events';
+import { ErrorTypes, ErrorDetails } from './errors';
+import type { HlsEventEmitter, HlsListeners } from './events';
+import type AudioTrackController from './controller/audio-track-controller';
+import type AbrController from './controller/abr-controller';
+import type BufferController from './controller/buffer-controller';
+import type CapLevelController from './controller/cap-level-controller';
+import type CMCDController from './controller/cmcd-controller';
+import type EMEController from './controller/eme-controller';
+import type SubtitleTrackController from './controller/subtitle-track-controller';
+import type { ComponentAPI, NetworkComponentAPI } from './types/component-api';
+import type { MediaPlaylist } from './types/media-playlist';
+import type { HlsConfig } from './config';
+import { HdcpLevel, HdcpLevels, Level } from './types/level';
+import type { Fragment } from './loader/fragment';
+import { BufferInfo } from './utils/buffer-helper';
+
+/**
+ * @module Hls
+ * @class
+ * @constructor
+ */
+export default class Hls implements HlsEventEmitter {
+  private static defaultConfig?: HlsConfig;
+
+  public readonly config: HlsConfig;
+  public readonly userConfig: Partial&lt;HlsConfig&gt;;
+
+  private coreComponents: ComponentAPI[];
+  private networkControllers: NetworkComponentAPI[];
+
+  private _emitter: HlsEventEmitter = new EventEmitter();
+  private _autoLevelCapping: number;
+  private _maxHdcpLevel: HdcpLevel = null;
+  private abrController: AbrController;
+  private bufferController: BufferController;
+  private capLevelController: CapLevelController;
+  private latencyController: LatencyController;
+  private levelController: LevelController;
+  private streamController: StreamController;
+  private audioTrackController: AudioTrackController;
+  private subtitleTrackController: SubtitleTrackController;
+  private emeController: EMEController;
+  private cmcdController: CMCDController;
+
+  private _media: HTMLMediaElement | null = null;
+  private url: string | null = null;
+
+  static get version(): string {
+    return __VERSION__;
+  }
+
+  static isSupported(): boolean {
+    return isSupported();
+  }
+
+  static get Events() {
+    return Events;
+  }
+
+  static get ErrorTypes() {
+    return ErrorTypes;
+  }
+
+  static get ErrorDetails() {
+    return ErrorDetails;
+  }
+
+  static get DefaultConfig(): HlsConfig {
+    if (!Hls.defaultConfig) {
+      return hlsDefaultConfig;
+    }
+
+    return Hls.defaultConfig;
+  }
+
+  /**
+   * @type {HlsConfig}
+   */
+  static set DefaultConfig(defaultConfig: HlsConfig) {
+    Hls.defaultConfig = defaultConfig;
+  }
+
+  /**
+   * Creates an instance of an HLS client that can attach to exactly one `HTMLMediaElement`.
+   *
+   * @constructs Hls
+   * @param {HlsConfig} config
+   */
+  constructor(userConfig: Partial&lt;HlsConfig&gt; = {}) {
+    const config = (this.config = mergeConfig(Hls.DefaultConfig, userConfig));
+    this.userConfig = userConfig;
+    enableLogs(config.debug, 'Hls instance');
+
+    this._autoLevelCapping = -1;
+
+    if (config.progressive) {
+      enableStreamingMode(config);
+    }
+
+    // core controllers and network loaders
+    const {
+      abrController: ConfigAbrController,
+      bufferController: ConfigBufferController,
+      capLevelController: ConfigCapLevelController,
+      fpsController: ConfigFpsController,
+    } = config;
+    const abrController = (this.abrController = new ConfigAbrController(this));
+    const bufferController = (this.bufferController =
+      new ConfigBufferController(this));
+    const capLevelController = (this.capLevelController =
+      new ConfigCapLevelController(this));
+
+    const fpsController = new ConfigFpsController(this);
+    const playListLoader = new PlaylistLoader(this);
+    const id3TrackController = new ID3TrackController(this);
+
+    // network controllers
+    const levelController = (this.levelController = new LevelController(this));
+    // FragmentTracker must be defined before StreamController because the order of event handling is important
+    const fragmentTracker = new FragmentTracker(this);
+    const keyLoader = new KeyLoader(this.config);
+    const streamController = (this.streamController = new StreamController(
+      this,
+      fragmentTracker,
+      keyLoader
+    ));
+
+    // Cap level controller uses streamController to flush the buffer
+    capLevelController.setStreamController(streamController);
+    // fpsController uses streamController to switch when frames are being dropped
+    fpsController.setStreamController(streamController);
+
+    const networkControllers: NetworkComponentAPI[] = [
+      playListLoader,
+      levelController,
+      streamController,
+    ];
+
+    this.networkControllers = networkControllers;
+    const coreComponents: ComponentAPI[] = [
+      abrController,
+      bufferController,
+      capLevelController,
+      fpsController,
+      id3TrackController,
+      fragmentTracker,
+    ];
+
+    this.audioTrackController = this.createController(
+      config.audioTrackController,
+      networkControllers
+    );
+    const AudioStreamControllerClass = config.audioStreamController;
+    if (AudioStreamControllerClass) {
+      networkControllers.push(
+        new AudioStreamControllerClass(this, fragmentTracker, keyLoader)
+      );
+    }
+    // subtitleTrackController must be defined before subtitleStreamController because the order of event handling is important
+    this.subtitleTrackController = this.createController(
+      config.subtitleTrackController,
+      networkControllers
+    );
+    const SubtitleStreamControllerClass = config.subtitleStreamController;
+    if (SubtitleStreamControllerClass) {
+      networkControllers.push(
+        new SubtitleStreamControllerClass(this, fragmentTracker, keyLoader)
+      );
+    }
+    this.createController(config.timelineController, coreComponents);
+    keyLoader.emeController = this.emeController = this.createController(
+      config.emeController,
+      coreComponents
+    );
+    this.cmcdController = this.createController(
+      config.cmcdController,
+      coreComponents
+    );
+    this.latencyController = this.createController(
+      LatencyController,
+      coreComponents
+    );
+
+    this.coreComponents = coreComponents;
+  }
+
+  createController(ControllerClass, components) {
+    if (ControllerClass) {
+      const controllerInstance = new ControllerClass(this);
+      if (components) {
+        components.push(controllerInstance);
+      }
+      return controllerInstance;
+    }
+    return null;
+  }
+
+  // Delegate the EventEmitter through the public API of Hls.js
+  on&lt;E extends keyof HlsListeners, Context = undefined&gt;(
+    event: E,
+    listener: HlsListeners[E],
+    context: Context = this as any
+  ) {
+    this._emitter.on(event, listener, context);
+  }
+
+  once&lt;E extends keyof HlsListeners, Context = undefined&gt;(
+    event: E,
+    listener: HlsListeners[E],
+    context: Context = this as any
+  ) {
+    this._emitter.once(event, listener, context);
+  }
+
+  removeAllListeners&lt;E extends keyof HlsListeners&gt;(event?: E | undefined) {
+    this._emitter.removeAllListeners(event);
+  }
+
+  off&lt;E extends keyof HlsListeners, Context = undefined&gt;(
+    event: E,
+    listener?: HlsListeners[E] | undefined,
+    context: Context = this as any,
+    once?: boolean | undefined
+  ) {
+    this._emitter.off(event, listener, context, once);
+  }
+
+  listeners&lt;E extends keyof HlsListeners&gt;(event: E): HlsListeners[E][] {
+    return this._emitter.listeners(event);
+  }
+
+  emit&lt;E extends keyof HlsListeners&gt;(
+    event: E,
+    name: E,
+    eventObject: Parameters&lt;HlsListeners[E]&gt;[1]
+  ): boolean {
+    return this._emitter.emit(event, name, eventObject);
+  }
+
+  trigger&lt;E extends keyof HlsListeners&gt;(
+    event: E,
+    eventObject: Parameters&lt;HlsListeners[E]&gt;[1]
+  ): boolean {
+    if (this.config.debug) {
+      return this.emit(event, event, eventObject);
+    } else {
+      try {
+        return this.emit(event, event, eventObject);
+      } catch (e) {
+        logger.error(
+          'An internal error happened while handling event ' +
+            event +
+            '. Error message: "' +
+            e.message +
+            '". Here is a stacktrace:',
+          e
+        );
+        this.trigger(Events.ERROR, {
+          type: ErrorTypes.OTHER_ERROR,
+          details: ErrorDetails.INTERNAL_EXCEPTION,
+          fatal: false,
+          event: event,
+          error: e,
+        });
+      }
+    }
+    return false;
+  }
+
+  listenerCount&lt;E extends keyof HlsListeners&gt;(event: E): number {
+    return this._emitter.listenerCount(event);
+  }
+
+  /**
+   * Dispose of the instance
+   */
+  destroy() {
+    logger.log('destroy');
+    this.trigger(Events.DESTROYING, undefined);
+    this.detachMedia();
+    this.removeAllListeners();
+    this._autoLevelCapping = -1;
+    this.url = null;
+
+    this.networkControllers.forEach((component) =&gt; component.destroy());
+    this.networkControllers.length = 0;
+
+    this.coreComponents.forEach((component) =&gt; component.destroy());
+    this.coreComponents.length = 0;
+  }
+
+  /**
+   * Attaches Hls.js to a media element
+   * @param {HTMLMediaElement} media
+   */
+  attachMedia(media: HTMLMediaElement) {
+    logger.log('attachMedia');
+    this._media = media;
+    this.trigger(Events.MEDIA_ATTACHING, { media: media });
+  }
+
+  /**
+   * Detach Hls.js from the media
+   */
+  detachMedia() {
+    logger.log('detachMedia');
+    this.trigger(Events.MEDIA_DETACHING, undefined);
+    this._media = null;
+  }
+
+  /**
+   * Set the source URL. Can be relative or absolute.
+   * @param {string} url
+   */
+  loadSource(url: string) {
+    this.stopLoad();
+    const media = this.media;
+    const loadedSource = this.url;
+    const loadingSource = (this.url = URLToolkit.buildAbsoluteURL(
+      self.location.href,
+      url,
+      {
+        alwaysNormalize: true,
+      }
+    ));
+    logger.log(`loadSource:${loadingSource}`);
+    if (
+      media &amp;&amp;
+      loadedSource &amp;&amp;
+      loadedSource !== loadingSource &amp;&amp;
+      this.bufferController.hasSourceTypes()
+    ) {
+      this.detachMedia();
+      this.attachMedia(media);
+    }
+    // when attaching to a source URL, trigger a playlist load
+    this.trigger(Events.MANIFEST_LOADING, { url: url });
+  }
+
+  /**
+   * Start loading data from the stream source.
+   * Depending on default config, client starts loading automatically when a source is set.
+   *
+   * @param {number} startPosition Set the start position to stream from
+   * @default -1 None (from earliest point)
+   */
+  startLoad(startPosition: number = -1) {
+    logger.log(`startLoad(${startPosition})`);
+    this.networkControllers.forEach((controller) =&gt; {
+      controller.startLoad(startPosition);
+    });
+  }
+
+  /**
+   * Stop loading of any stream data.
+   */
+  stopLoad() {
+    logger.log('stopLoad');
+    this.networkControllers.forEach((controller) =&gt; {
+      controller.stopLoad();
+    });
+  }
+
+  /**
+   * Swap through possible audio codecs in the stream (for example to switch from stereo to 5.1)
+   */
+  swapAudioCodec() {
+    logger.log('swapAudioCodec');
+    this.streamController.swapAudioCodec();
+  }
+
+  /**
+   * When the media-element fails, this allows to detach and then re-attach it
+   * as one call (convenience method).
+   *
+   * Automatic recovery of media-errors by this process is configurable.
+   */
+  recoverMediaError() {
+    logger.log('recoverMediaError');
+    const media = this._media;
+    this.detachMedia();
+    if (media) {
+      this.attachMedia(media);
+    }
+  }
+
+  removeLevel(levelIndex, urlId = 0) {
+    this.levelController.removeLevel(levelIndex, urlId);
+  }
+
+  /**
+   * @type {Level[]}
+   */
+  get levels(): Array&lt;Level&gt; {
+    const levels = this.levelController.levels;
+    return levels ? levels : [];
+  }
+
+  /**
+   * Index of quality level currently played
+   * @type {number}
+   */
+  get currentLevel(): number {
+    return this.streamController.currentLevel;
+  }
+
+  /**
+   * Set quality level index immediately .
+   * This will flush the current buffer to replace the quality asap.
+   * That means playback will interrupt at least shortly to re-buffer and re-sync eventually.
+   * @type {number} -1 for automatic level selection
+   */
+  set currentLevel(newLevel: number) {
+    logger.log(`set currentLevel:${newLevel}`);
+    this.loadLevel = newLevel;
+    this.abrController.clearTimer();
+    this.streamController.immediateLevelSwitch();
+  }
+
+  /**
+   * Index of next quality level loaded as scheduled by stream controller.
+   * @type {number}
+   */
+  get nextLevel(): number {
+    return this.streamController.nextLevel;
+  }
+
+  /**
+   * Set quality level index for next loaded data.
+   * This will switch the video quality asap, without interrupting playback.
+   * May abort current loading of data, and flush parts of buffer (outside currently played fragment region).
+   * @type {number} -1 for automatic level selection
+   */
+  set nextLevel(newLevel: number) {
+    logger.log(`set nextLevel:${newLevel}`);
+    this.levelController.manualLevel = newLevel;
+    this.streamController.nextLevelSwitch();
+  }
+
+  /**
+   * Return the quality level of the currently or last (of none is loaded currently) segment
+   * @type {number}
+   */
+  get loadLevel(): number {
+    return this.levelController.level;
+  }
+
+  /**
+   * Set quality level index for next loaded data in a conservative way.
+   * This will switch the quality without flushing, but interrupt current loading.
+   * Thus the moment when the quality switch will appear in effect will only be after the already existing buffer.
+   * @type {number} newLevel -1 for automatic level selection
+   */
+  set loadLevel(newLevel: number) {
+    logger.log(`set loadLevel:${newLevel}`);
+    this.levelController.manualLevel = newLevel;
+  }
+
+  /**
+   * get next quality level loaded
+   * @type {number}
+   */
+  get nextLoadLevel(): number {
+    return this.levelController.nextLoadLevel;
+  }
+
+  /**
+   * Set quality level of next loaded segment in a fully "non-destructive" way.
+   * Same as `loadLevel` but will wait for next switch (until current loading is done).
+   * @type {number} level
+   */
+  set nextLoadLevel(level: number) {
+    this.levelController.nextLoadLevel = level;
+  }
+
+  /**
+   * Return "first level": like a default level, if not set,
+   * falls back to index of first level referenced in manifest
+   * @type {number}
+   */
+  get firstLevel(): number {
+    return Math.max(this.levelController.firstLevel, this.minAutoLevel);
+  }
+
+  /**
+   * Sets "first-level", see getter.
+   * @type {number}
+   */
+  set firstLevel(newLevel: number) {
+    logger.log(`set firstLevel:${newLevel}`);
+    this.levelController.firstLevel = newLevel;
+  }
+
+  /**
+   * Return start level (level of first fragment that will be played back)
+   * if not overrided by user, first level appearing in manifest will be used as start level
+   * if -1 : automatic start level selection, playback will start from level matching download bandwidth
+   * (determined from download of first segment)
+   * @type {number}
+   */
+  get startLevel(): number {
+    return this.levelController.startLevel;
+  }
+
+  /**
+   * set  start level (level of first fragment that will be played back)
+   * if not overrided by user, first level appearing in manifest will be used as start level
+   * if -1 : automatic start level selection, playback will start from level matching download bandwidth
+   * (determined from download of first segment)
+   * @type {number} newLevel
+   */
+  set startLevel(newLevel: number) {
+    logger.log(`set startLevel:${newLevel}`);
+    // if not in automatic start level detection, ensure startLevel is greater than minAutoLevel
+    if (newLevel !== -1) {
+      newLevel = Math.max(newLevel, this.minAutoLevel);
+    }
+
+    this.levelController.startLevel = newLevel;
+  }
+
+  /**
+   * Get the current setting for capLevelToPlayerSize
+   *
+   * @type {boolean}
+   */
+  get capLevelToPlayerSize(): boolean {
+    return this.config.capLevelToPlayerSize;
+  }
+
+  /**
+   * set  dynamically set capLevelToPlayerSize against (`CapLevelController`)
+   *
+   * @type {boolean}
+   */
+  set capLevelToPlayerSize(shouldStartCapping: boolean) {
+    const newCapLevelToPlayerSize = !!shouldStartCapping;
+
+    if (newCapLevelToPlayerSize !== this.config.capLevelToPlayerSize) {
+      if (newCapLevelToPlayerSize) {
+        this.capLevelController.startCapping(); // If capping occurs, nextLevelSwitch will happen based on size.
+      } else {
+        this.capLevelController.stopCapping();
+        this.autoLevelCapping = -1;
+        this.streamController.nextLevelSwitch(); // Now we're uncapped, get the next level asap.
+      }
+
+      this.config.capLevelToPlayerSize = newCapLevelToPlayerSize;
+    }
+  }
+
+  /**
+   * Capping/max level value that should be used by automatic level selection algorithm (`ABRController`)
+   * @type {number}
+   */
+  get autoLevelCapping(): number {
+    return this._autoLevelCapping;
+  }
+
+  /**
+   * get bandwidth estimate
+   * @type {number}
+   */
+  get bandwidthEstimate(): number {
+    const { bwEstimator } = this.abrController;
+    if (!bwEstimator) {
+      return NaN;
+    }
+    return bwEstimator.getEstimate();
+  }
+
+  /**
+   * Capping/max level value that should be used by automatic level selection algorithm (`ABRController`)
+   * @type {number}
+   */
+  set autoLevelCapping(newLevel: number) {
+    if (this._autoLevelCapping !== newLevel) {
+      logger.log(`set autoLevelCapping:${newLevel}`);
+      this._autoLevelCapping = newLevel;
+    }
+  }
+
+  get maxHdcpLevel(): HdcpLevel {
+    return this._maxHdcpLevel;
+  }
+
+  set maxHdcpLevel(value: HdcpLevel) {
+    if (HdcpLevels.indexOf(value) &gt; -1) {
+      this._maxHdcpLevel = value;
+    }
+  }
+
+  /**
+   * True when automatic level selection enabled
+   * @type {boolean}
+   */
+  get autoLevelEnabled(): boolean {
+    return this.levelController.manualLevel === -1;
+  }
+
+  /**
+   * Level set manually (if any)
+   * @type {number}
+   */
+  get manualLevel(): number {
+    return this.levelController.manualLevel;
+  }
+
+  /**
+   * min level selectable in auto mode according to config.minAutoBitrate
+   * @type {number}
+   */
+  get minAutoLevel(): number {
+    const {
+      levels,
+      config: { minAutoBitrate },
+    } = this;
+    if (!levels) return 0;
+
+    const len = levels.length;
+    for (let i = 0; i &lt; len; i++) {
+      if (levels[i].maxBitrate &gt;= minAutoBitrate) {
+        return i;
+      }
+    }
+
+    return 0;
+  }
+
+  /**
+   * max level selectable in auto mode according to autoLevelCapping
+   * @type {number}
+   */
+  get maxAutoLevel(): number {
+    const { levels, autoLevelCapping, maxHdcpLevel } = this;
+
+    let maxAutoLevel;
+    if (autoLevelCapping === -1 &amp;&amp; levels &amp;&amp; levels.length) {
+      maxAutoLevel = levels.length - 1;
+    } else {
+      maxAutoLevel = autoLevelCapping;
+    }
+
+    if (maxHdcpLevel) {
+      for (let i = maxAutoLevel; i--; ) {
+        const hdcpLevel = levels[i].attrs['HDCP-LEVEL'];
+        if (hdcpLevel &amp;&amp; hdcpLevel &lt;= maxHdcpLevel) {
+          return i;
+        }
+      }
+    }
+
+    return maxAutoLevel;
+  }
+
+  /**
+   * next automatically selected quality level
+   * @type {number}
+   */
+  get nextAutoLevel(): number {
+    // ensure next auto level is between  min and max auto level
+    return Math.min(
+      Math.max(this.abrController.nextAutoLevel, this.minAutoLevel),
+      this.maxAutoLevel
+    );
+  }
+
+  /**
+   * this setter is used to force next auto level.
+   * this is useful to force a switch down in auto mode:
+   * in case of load error on level N, hls.js can set nextAutoLevel to N-1 for example)
+   * forced value is valid for one fragment. upon successful frag loading at forced level,
+   * this value will be resetted to -1 by ABR controller.
+   * @type {number}
+   */
+  set nextAutoLevel(nextLevel: number) {
+    this.abrController.nextAutoLevel = Math.max(this.minAutoLevel, nextLevel);
+  }
+
+  /**
+   * get the datetime value relative to media.currentTime for the active level Program Date Time if present
+   * @type {Date}
+   */
+  public get playingDate(): Date | null {
+    return this.streamController.currentProgramDateTime;
+  }
+
+  public get mainForwardBufferInfo(): BufferInfo | null {
+    return this.streamController.getMainFwdBufferInfo();
+  }
+
+  /**
+   * @type {AudioTrack[]}
+   */
+  get audioTracks(): Array&lt;MediaPlaylist&gt; {
+    const audioTrackController = this.audioTrackController;
+    return audioTrackController ? audioTrackController.audioTracks : [];
+  }
+
+  /**
+   * index of the selected audio track (index in audio track lists)
+   * @type {number}
+   */
+  get audioTrack(): number {
+    const audioTrackController = this.audioTrackController;
+    return audioTrackController ? audioTrackController.audioTrack : -1;
+  }
+
+  /**
+   * selects an audio track, based on its index in audio track lists
+   * @type {number}
+   */
+  set audioTrack(audioTrackId: number) {
+    const audioTrackController = this.audioTrackController;
+    if (audioTrackController) {
+      audioTrackController.audioTrack = audioTrackId;
+    }
+  }
+
+  /**
+   * get alternate subtitle tracks list from playlist
+   * @type {MediaPlaylist[]}
+   */
+  get subtitleTracks(): Array&lt;MediaPlaylist&gt; {
+    const subtitleTrackController = this.subtitleTrackController;
+    return subtitleTrackController
+      ? subtitleTrackController.subtitleTracks
+      : [];
+  }
+
+  /**
+   * index of the selected subtitle track (index in subtitle track lists)
+   * @type {number}
+   */
+  get subtitleTrack(): number {
+    const subtitleTrackController = this.subtitleTrackController;
+    return subtitleTrackController ? subtitleTrackController.subtitleTrack : -1;
+  }
+
+  get media() {
+    return this._media;
+  }
+
+  /**
+   * select an subtitle track, based on its index in subtitle track lists
+   * @type {number}
+   */
+  set subtitleTrack(subtitleTrackId: number) {
+    const subtitleTrackController = this.subtitleTrackController;
+    if (subtitleTrackController) {
+      subtitleTrackController.subtitleTrack = subtitleTrackId;
+    }
+  }
+
+  /**
+   * @type {boolean}
+   */
+  get subtitleDisplay(): boolean {
+    const subtitleTrackController = this.subtitleTrackController;
+    return subtitleTrackController
+      ? subtitleTrackController.subtitleDisplay
+      : false;
+  }
+
+  /**
+   * Enable/disable subtitle display rendering
+   * @type {boolean}
+   */
+  set subtitleDisplay(value: boolean) {
+    const subtitleTrackController = this.subtitleTrackController;
+    if (subtitleTrackController) {
+      subtitleTrackController.subtitleDisplay = value;
+    }
+  }
+
+  /**
+   * get mode for Low-Latency HLS loading
+   * @type {boolean}
+   */
+  get lowLatencyMode() {
+    return this.config.lowLatencyMode;
+  }
+
+  /**
+   * Enable/disable Low-Latency HLS part playlist and segment loading, and start live streams at playlist PART-HOLD-BACK rather than HOLD-BACK.
+   * @type {boolean}
+   */
+  set lowLatencyMode(mode: boolean) {
+    this.config.lowLatencyMode = mode;
+  }
+
+  /**
+   * position (in seconds) of live sync point (ie edge of live position minus safety delay defined by ```hls.config.liveSyncDuration```)
+   * @type {number}
+   */
+  get liveSyncPosition(): number | null {
+    return this.latencyController.liveSyncPosition;
+  }
+
+  /**
+   * estimated position (in seconds) of live edge (ie edge of live playlist plus time sync playlist advanced)
+   * returns 0 before first playlist is loaded
+   * @type {number}
+   */
+  get latency() {
+    return this.latencyController.latency;
+  }
+
+  /**
+   * maximum distance from the edge before the player seeks forward to ```hls.liveSyncPosition```
+   * configured using ```liveMaxLatencyDurationCount``` (multiple of target duration) or ```liveMaxLatencyDuration```
+   * returns 0 before first playlist is loaded
+   * @type {number}
+   */
+  get maxLatency(): number {
+    return this.latencyController.maxLatency;
+  }
+
+  /**
+   * target distance from the edge as calculated by the latency controller
+   * @type {number}
+   */
+  get targetLatency(): number | null {
+    return this.latencyController.targetLatency;
+  }
+
+  /**
+   * the rate at which the edge of the current live playlist is advancing or 1 if there is none
+   * @type {number}
+   */
+  get drift(): number | null {
+    return this.latencyController.drift;
+  }
+
+  /**
+   * set to true when startLoad is called before MANIFEST_PARSED event
+   * @type {boolean}
+   */
+  get forceStartLoad(): boolean {
+    return this.streamController.forceStartLoad;
+  }
+}
+
+export type {
+  MediaPlaylist,
+  ErrorDetails,
+  ErrorTypes,
+  Events,
+  Level,
+  HlsListeners,
+  HlsEventEmitter,
+  HlsConfig,
+  Fragment,
+};
+
+export type {
+  ABRControllerConfig,
+  BufferControllerConfig,
+  CapLevelControllerConfig,
+  CMCDControllerConfig,
+  EMEControllerConfig,
+  DRMSystemOptions,
+  FPSControllerConfig,
+  FragmentLoaderConfig,
+  FragmentLoaderConstructor,
+  LevelControllerConfig,
+  MP4RemuxerConfig,
+  PlaylistLoaderConfig,
+  PlaylistLoaderConstructor,
+  StreamControllerConfig,
+  LatencyControllerConfig,
+  MetadataControllerConfig,
+  TimelineControllerConfig,
+  TSDemuxerConfig,
+} from './config';
+export type { CuesInterface } from './utils/cues';
+export type {
+  MediaKeyFunc,
+  KeySystems,
+  KeySystemFormats,
+} from './utils/mediakeys-helper';
+export type { DateRange } from './loader/date-range';
+export type { LoadStats } from './loader/load-stats';
+export type { LevelKey } from './loader/level-key';
+export type { LevelDetails } from './loader/level-details';
+export type { SourceBufferName } from './types/buffer';
+export type {
+  MetadataSample,
+  MetadataSchema,
+  UserdataSample,
+} from './types/demuxer';
+export type {
+  HdcpLevel,
+  HdcpLevels,
+  HlsSkip,
+  HlsUrlParameters,
+  LevelAttributes,
+  LevelParsed,
+} from './types/level';
+export type {
+  PlaylistLevelType,
+  HlsChunkPerformanceTiming,
+  HlsPerformanceTiming,
+  PlaylistContextType,
+  PlaylistLoaderContext,
+  FragmentLoaderContext,
+  Loader,
+  LoaderStats,
+  LoaderContext,
+  LoaderResponse,
+  LoaderConfiguration,
+  LoaderCallbacks,
+  LoaderOnProgress,
+  LoaderOnAbort,
+  LoaderOnError,
+  LoaderOnSuccess,
+  LoaderOnTimeout,
+  HlsProgressivePerformanceTiming,
+} from './types/loader';
+export type {
+  MediaPlaylistType,
+  MainPlaylistType,
+  AudioPlaylistType,
+  SubtitlePlaylistType,
+} from './types/media-playlist';
+export type { Track, TrackSet } from './types/track';
+export type { ChunkMetadata } from './types/transmuxer';
+export type {
+  BaseSegment,
+  Part,
+  ElementaryStreams,
+  ElementaryStreamTypes,
+  ElementaryStreamInfo,
+} from './loader/fragment';
+export type {
+  TrackLoadingData,
+  TrackLoadedData,
+  AudioTrackLoadedData,
+  AudioTracksUpdatedData,
+  AudioTrackSwitchedData,
+  AudioTrackSwitchingData,
+  BackBufferData,
+  BufferAppendedData,
+  BufferAppendingData,
+  BufferCodecsData,
+  BufferCreatedData,
+  BufferEOSData,
+  BufferFlushedData,
+  BufferFlushingData,
+  CuesParsedData,
+  ErrorData,
+  FPSDropData,
+  FPSDropLevelCappingData,
+  FragBufferedData,
+  FragChangedData,
+  FragDecryptedData,
+  FragLoadedData,
+  FragLoadEmergencyAbortedData,
+  FragLoadingData,
+  FragParsedData,
+  FragParsingInitSegmentData,
+  FragParsingMetadataData,
+  FragParsingUserdataData,
+  InitPTSFoundData,
+  KeyLoadedData,
+  KeyLoadingData,
+  LevelLoadedData,
+  LevelLoadingData,
+  LevelPTSUpdatedData,
+  LevelsUpdatedData,
+  LevelSwitchedData,
+  LevelSwitchingData,
+  LevelUpdatedData,
+  LiveBackBufferData,
+  ManifestLoadedData,
+  ManifestLoadingData,
+  ManifestParsedData,
+  MediaAttachedData,
+  MediaAttachingData,
+  NonNativeTextTrack,
+  NonNativeTextTracksData,
+  SubtitleFragProcessedData,
+  SubtitleTrackLoadedData,
+  SubtitleTracksUpdatedData,
+  SubtitleTrackSwitchData,
+} from './types/events';
+export type { AttrList } from './utils/attr-list';
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.5.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+
+
+</body></html>

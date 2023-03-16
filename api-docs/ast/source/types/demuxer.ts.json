@@ -1,0 +1,664 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 267,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0,
+      "index": 0
+    },
+    "end": {
+      "line": 7,
+      "column": 0,
+      "index": 267
+    }
+  },
+  "errors": [],
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 267,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0,
+        "index": 0
+      },
+      "end": {
+        "line": 7,
+        "column": 0,
+        "index": 267
+      }
+    },
+    "sourceType": "module",
+    "interpreter": null,
+    "body": [
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 0,
+        "end": 26,
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+          },
+          "end": {
+            "line": 1,
+            "column": 26,
+            "index": 26
+          }
+        },
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 7,
+          "end": 26,
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 7,
+              "index": 7
+            },
+            "end": {
+              "line": 1,
+              "column": 26,
+              "index": 26
+            }
+          },
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 11,
+              "end": 25,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 11,
+                  "index": 11
+                },
+                "end": {
+                  "line": 1,
+                  "column": 25,
+                  "index": 25
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 11,
+                "end": 25,
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 11,
+                    "index": 11
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 25,
+                    "index": 25
+                  },
+                  "identifierName": "MetadataSchema"
+                },
+                "name": "MetadataSchema"
+              },
+              "init": null
+            }
+          ],
+          "kind": "var",
+          "leadingComments": [],
+          "trailingComments": []
+        }
+      },
+      {
+        "type": "ExpressionStatement",
+        "start": 27,
+        "end": 266,
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 0,
+            "index": 27
+          },
+          "end": {
+            "line": 6,
+            "column": 44,
+            "index": 266
+          }
+        },
+        "expression": {
+          "type": "CallExpression",
+          "start": 27,
+          "end": 265,
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0,
+              "index": 27
+            },
+            "end": {
+              "line": 6,
+              "column": 43,
+              "index": 265
+            }
+          },
+          "callee": {
+            "type": "FunctionExpression",
+            "start": 28,
+            "end": 223,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 1,
+                "index": 28
+              },
+              "end": {
+                "line": 6,
+                "column": 1,
+                "index": 223
+              }
+            },
+            "id": null,
+            "generator": false,
+            "async": false,
+            "params": [
+              {
+                "type": "Identifier",
+                "start": 38,
+                "end": 52,
+                "loc": {
+                  "start": {
+                    "line": 2,
+                    "column": 11,
+                    "index": 38
+                  },
+                  "end": {
+                    "line": 2,
+                    "column": 25,
+                    "index": 52
+                  },
+                  "identifierName": "MetadataSchema"
+                },
+                "name": "MetadataSchema"
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "start": 54,
+              "end": 223,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 27,
+                  "index": 54
+                },
+                "end": {
+                  "line": 6,
+                  "column": 1,
+                  "index": 223
+                }
+              },
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "start": 60,
+                  "end": 99,
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 4,
+                      "index": 60
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 43,
+                      "index": 99
+                    }
+                  },
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "start": 60,
+                    "end": 98,
+                    "loc": {
+                      "start": {
+                        "line": 3,
+                        "column": 4,
+                        "index": 60
+                      },
+                      "end": {
+                        "line": 3,
+                        "column": 42,
+                        "index": 98
+                      }
+                    },
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "start": 60,
+                      "end": 86,
+                      "loc": {
+                        "start": {
+                          "line": 3,
+                          "column": 4,
+                          "index": 60
+                        },
+                        "end": {
+                          "line": 3,
+                          "column": 30,
+                          "index": 86
+                        }
+                      },
+                      "object": {
+                        "type": "Identifier",
+                        "start": 60,
+                        "end": 74,
+                        "loc": {
+                          "start": {
+                            "line": 3,
+                            "column": 4,
+                            "index": 60
+                          },
+                          "end": {
+                            "line": 3,
+                            "column": 18,
+                            "index": 74
+                          },
+                          "identifierName": "MetadataSchema"
+                        },
+                        "name": "MetadataSchema"
+                      },
+                      "computed": true,
+                      "property": {
+                        "type": "StringLiteral",
+                        "start": 75,
+                        "end": 85,
+                        "loc": {
+                          "start": {
+                            "line": 3,
+                            "column": 19,
+                            "index": 75
+                          },
+                          "end": {
+                            "line": 3,
+                            "column": 29,
+                            "index": 85
+                          }
+                        },
+                        "extra": {
+                          "rawValue": "audioId3",
+                          "raw": "\"audioId3\""
+                        },
+                        "value": "audioId3"
+                      }
+                    },
+                    "right": {
+                      "type": "StringLiteral",
+                      "start": 89,
+                      "end": 98,
+                      "loc": {
+                        "start": {
+                          "line": 3,
+                          "column": 33,
+                          "index": 89
+                        },
+                        "end": {
+                          "line": 3,
+                          "column": 42,
+                          "index": 98
+                        }
+                      },
+                      "extra": {
+                        "rawValue": "org.id3",
+                        "raw": "\"org.id3\""
+                      },
+                      "value": "org.id3"
+                    }
+                  }
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "start": 104,
+                  "end": 160,
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 4,
+                      "index": 104
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 60,
+                      "index": 160
+                    }
+                  },
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "start": 104,
+                    "end": 159,
+                    "loc": {
+                      "start": {
+                        "line": 4,
+                        "column": 4,
+                        "index": 104
+                      },
+                      "end": {
+                        "line": 4,
+                        "column": 59,
+                        "index": 159
+                      }
+                    },
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "start": 104,
+                      "end": 131,
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 4,
+                          "index": 104
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 31,
+                          "index": 131
+                        }
+                      },
+                      "object": {
+                        "type": "Identifier",
+                        "start": 104,
+                        "end": 118,
+                        "loc": {
+                          "start": {
+                            "line": 4,
+                            "column": 4,
+                            "index": 104
+                          },
+                          "end": {
+                            "line": 4,
+                            "column": 18,
+                            "index": 118
+                          },
+                          "identifierName": "MetadataSchema"
+                        },
+                        "name": "MetadataSchema"
+                      },
+                      "computed": true,
+                      "property": {
+                        "type": "StringLiteral",
+                        "start": 119,
+                        "end": 130,
+                        "loc": {
+                          "start": {
+                            "line": 4,
+                            "column": 19,
+                            "index": 119
+                          },
+                          "end": {
+                            "line": 4,
+                            "column": 30,
+                            "index": 130
+                          }
+                        },
+                        "extra": {
+                          "rawValue": "dateRange",
+                          "raw": "\"dateRange\""
+                        },
+                        "value": "dateRange"
+                      }
+                    },
+                    "right": {
+                      "type": "StringLiteral",
+                      "start": 134,
+                      "end": 159,
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 34,
+                          "index": 134
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 59,
+                          "index": 159
+                        }
+                      },
+                      "extra": {
+                        "rawValue": "com.apple.quicktime.HLS",
+                        "raw": "\"com.apple.quicktime.HLS\""
+                      },
+                      "value": "com.apple.quicktime.HLS"
+                    }
+                  }
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "start": 165,
+                  "end": 221,
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 4,
+                      "index": 165
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 60,
+                      "index": 221
+                    }
+                  },
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "start": 165,
+                    "end": 220,
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 4,
+                        "index": 165
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 59,
+                        "index": 220
+                      }
+                    },
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "start": 165,
+                      "end": 187,
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 4,
+                          "index": 165
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 26,
+                          "index": 187
+                        }
+                      },
+                      "object": {
+                        "type": "Identifier",
+                        "start": 165,
+                        "end": 179,
+                        "loc": {
+                          "start": {
+                            "line": 5,
+                            "column": 4,
+                            "index": 165
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 18,
+                            "index": 179
+                          },
+                          "identifierName": "MetadataSchema"
+                        },
+                        "name": "MetadataSchema"
+                      },
+                      "computed": true,
+                      "property": {
+                        "type": "StringLiteral",
+                        "start": 180,
+                        "end": 186,
+                        "loc": {
+                          "start": {
+                            "line": 5,
+                            "column": 19,
+                            "index": 180
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 25,
+                            "index": 186
+                          }
+                        },
+                        "extra": {
+                          "rawValue": "emsg",
+                          "raw": "\"emsg\""
+                        },
+                        "value": "emsg"
+                      }
+                    },
+                    "right": {
+                      "type": "StringLiteral",
+                      "start": 190,
+                      "end": 220,
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 29,
+                          "index": 190
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 59,
+                          "index": 220
+                        }
+                      },
+                      "extra": {
+                        "rawValue": "https://aomedia.org/emsg/ID3",
+                        "raw": "\"https://aomedia.org/emsg/ID3\""
+                      },
+                      "value": "https://aomedia.org/emsg/ID3"
+                    }
+                  }
+                }
+              ],
+              "directives": []
+            },
+            "extra": {
+              "parenthesized": true,
+              "parenStart": 27
+            }
+          },
+          "arguments": [
+            {
+              "type": "LogicalExpression",
+              "start": 225,
+              "end": 264,
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 3,
+                  "index": 225
+                },
+                "end": {
+                  "line": 6,
+                  "column": 42,
+                  "index": 264
+                }
+              },
+              "left": {
+                "type": "Identifier",
+                "start": 225,
+                "end": 239,
+                "loc": {
+                  "start": {
+                    "line": 6,
+                    "column": 3,
+                    "index": 225
+                  },
+                  "end": {
+                    "line": 6,
+                    "column": 17,
+                    "index": 239
+                  },
+                  "identifierName": "MetadataSchema"
+                },
+                "name": "MetadataSchema"
+              },
+              "operator": "||",
+              "right": {
+                "type": "AssignmentExpression",
+                "start": 244,
+                "end": 263,
+                "loc": {
+                  "start": {
+                    "line": 6,
+                    "column": 22,
+                    "index": 244
+                  },
+                  "end": {
+                    "line": 6,
+                    "column": 41,
+                    "index": 263
+                  }
+                },
+                "operator": "=",
+                "left": {
+                  "type": "Identifier",
+                  "start": 244,
+                  "end": 258,
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 22,
+                      "index": 244
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 36,
+                      "index": 258
+                    },
+                    "identifierName": "MetadataSchema"
+                  },
+                  "name": "MetadataSchema"
+                },
+                "right": {
+                  "type": "ObjectExpression",
+                  "start": 261,
+                  "end": 263,
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 39,
+                      "index": 261
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 41,
+                      "index": 263
+                    }
+                  },
+                  "properties": []
+                },
+                "extra": {
+                  "parenthesized": true,
+                  "parenStart": 243
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "directives": []
+  },
+  "comments": []
+}

@@ -1,0 +1,1403 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 574,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0,
+      "index": 0
+    },
+    "end": {
+      "line": 14,
+      "column": 0,
+      "index": 574
+    }
+  },
+  "errors": [],
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 574,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0,
+        "index": 0
+      },
+      "end": {
+        "line": 14,
+        "column": 0,
+        "index": 574
+      }
+    },
+    "sourceType": "module",
+    "interpreter": null,
+    "body": [
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 0,
+        "end": 31,
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+          },
+          "end": {
+            "line": 1,
+            "column": 31,
+            "index": 31
+          }
+        },
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 7,
+          "end": 31,
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 7,
+              "index": 7
+            },
+            "end": {
+              "line": 1,
+              "column": 31,
+              "index": 31
+            }
+          },
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 11,
+              "end": 30,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 11,
+                  "index": 11
+                },
+                "end": {
+                  "line": 1,
+                  "column": 30,
+                  "index": 30
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 11,
+                "end": 30,
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 11,
+                    "index": 11
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 30,
+                    "index": 30
+                  },
+                  "identifierName": "PlaylistContextType"
+                },
+                "name": "PlaylistContextType"
+              },
+              "init": null
+            }
+          ],
+          "kind": "var",
+          "leadingComments": [],
+          "trailingComments": []
+        }
+      },
+      {
+        "type": "ExpressionStatement",
+        "start": 32,
+        "end": 330,
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 0,
+            "index": 32
+          },
+          "end": {
+            "line": 7,
+            "column": 54,
+            "index": 330
+          }
+        },
+        "expression": {
+          "type": "CallExpression",
+          "start": 32,
+          "end": 329,
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0,
+              "index": 32
+            },
+            "end": {
+              "line": 7,
+              "column": 53,
+              "index": 329
+            }
+          },
+          "callee": {
+            "type": "FunctionExpression",
+            "start": 33,
+            "end": 277,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 1,
+                "index": 33
+              },
+              "end": {
+                "line": 7,
+                "column": 1,
+                "index": 277
+              }
+            },
+            "id": null,
+            "generator": false,
+            "async": false,
+            "params": [
+              {
+                "type": "Identifier",
+                "start": 43,
+                "end": 62,
+                "loc": {
+                  "start": {
+                    "line": 2,
+                    "column": 11,
+                    "index": 43
+                  },
+                  "end": {
+                    "line": 2,
+                    "column": 30,
+                    "index": 62
+                  },
+                  "identifierName": "PlaylistContextType"
+                },
+                "name": "PlaylistContextType"
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "start": 64,
+              "end": 277,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 32,
+                  "index": 64
+                },
+                "end": {
+                  "line": 7,
+                  "column": 1,
+                  "index": 277
+                }
+              },
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "start": 70,
+                  "end": 115,
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 4,
+                      "index": 70
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 49,
+                      "index": 115
+                    }
+                  },
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "start": 70,
+                    "end": 114,
+                    "loc": {
+                      "start": {
+                        "line": 3,
+                        "column": 4,
+                        "index": 70
+                      },
+                      "end": {
+                        "line": 3,
+                        "column": 48,
+                        "index": 114
+                      }
+                    },
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "start": 70,
+                      "end": 101,
+                      "loc": {
+                        "start": {
+                          "line": 3,
+                          "column": 4,
+                          "index": 70
+                        },
+                        "end": {
+                          "line": 3,
+                          "column": 35,
+                          "index": 101
+                        }
+                      },
+                      "object": {
+                        "type": "Identifier",
+                        "start": 70,
+                        "end": 89,
+                        "loc": {
+                          "start": {
+                            "line": 3,
+                            "column": 4,
+                            "index": 70
+                          },
+                          "end": {
+                            "line": 3,
+                            "column": 23,
+                            "index": 89
+                          },
+                          "identifierName": "PlaylistContextType"
+                        },
+                        "name": "PlaylistContextType"
+                      },
+                      "computed": true,
+                      "property": {
+                        "type": "StringLiteral",
+                        "start": 90,
+                        "end": 100,
+                        "loc": {
+                          "start": {
+                            "line": 3,
+                            "column": 24,
+                            "index": 90
+                          },
+                          "end": {
+                            "line": 3,
+                            "column": 34,
+                            "index": 100
+                          }
+                        },
+                        "extra": {
+                          "rawValue": "MANIFEST",
+                          "raw": "\"MANIFEST\""
+                        },
+                        "value": "MANIFEST"
+                      }
+                    },
+                    "right": {
+                      "type": "StringLiteral",
+                      "start": 104,
+                      "end": 114,
+                      "loc": {
+                        "start": {
+                          "line": 3,
+                          "column": 38,
+                          "index": 104
+                        },
+                        "end": {
+                          "line": 3,
+                          "column": 48,
+                          "index": 114
+                        }
+                      },
+                      "extra": {
+                        "rawValue": "manifest",
+                        "raw": "\"manifest\""
+                      },
+                      "value": "manifest"
+                    }
+                  }
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "start": 120,
+                  "end": 159,
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 4,
+                      "index": 120
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 43,
+                      "index": 159
+                    }
+                  },
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "start": 120,
+                    "end": 158,
+                    "loc": {
+                      "start": {
+                        "line": 4,
+                        "column": 4,
+                        "index": 120
+                      },
+                      "end": {
+                        "line": 4,
+                        "column": 42,
+                        "index": 158
+                      }
+                    },
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "start": 120,
+                      "end": 148,
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 4,
+                          "index": 120
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 32,
+                          "index": 148
+                        }
+                      },
+                      "object": {
+                        "type": "Identifier",
+                        "start": 120,
+                        "end": 139,
+                        "loc": {
+                          "start": {
+                            "line": 4,
+                            "column": 4,
+                            "index": 120
+                          },
+                          "end": {
+                            "line": 4,
+                            "column": 23,
+                            "index": 139
+                          },
+                          "identifierName": "PlaylistContextType"
+                        },
+                        "name": "PlaylistContextType"
+                      },
+                      "computed": true,
+                      "property": {
+                        "type": "StringLiteral",
+                        "start": 140,
+                        "end": 147,
+                        "loc": {
+                          "start": {
+                            "line": 4,
+                            "column": 24,
+                            "index": 140
+                          },
+                          "end": {
+                            "line": 4,
+                            "column": 31,
+                            "index": 147
+                          }
+                        },
+                        "extra": {
+                          "rawValue": "LEVEL",
+                          "raw": "\"LEVEL\""
+                        },
+                        "value": "LEVEL"
+                      }
+                    },
+                    "right": {
+                      "type": "StringLiteral",
+                      "start": 151,
+                      "end": 158,
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 35,
+                          "index": 151
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 42,
+                          "index": 158
+                        }
+                      },
+                      "extra": {
+                        "rawValue": "level",
+                        "raw": "\"level\""
+                      },
+                      "value": "level"
+                    }
+                  }
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "start": 164,
+                  "end": 214,
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 4,
+                      "index": 164
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 54,
+                      "index": 214
+                    }
+                  },
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "start": 164,
+                    "end": 213,
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 4,
+                        "index": 164
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 53,
+                        "index": 213
+                      }
+                    },
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "start": 164,
+                      "end": 198,
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 4,
+                          "index": 164
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 38,
+                          "index": 198
+                        }
+                      },
+                      "object": {
+                        "type": "Identifier",
+                        "start": 164,
+                        "end": 183,
+                        "loc": {
+                          "start": {
+                            "line": 5,
+                            "column": 4,
+                            "index": 164
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 23,
+                            "index": 183
+                          },
+                          "identifierName": "PlaylistContextType"
+                        },
+                        "name": "PlaylistContextType"
+                      },
+                      "computed": true,
+                      "property": {
+                        "type": "StringLiteral",
+                        "start": 184,
+                        "end": 197,
+                        "loc": {
+                          "start": {
+                            "line": 5,
+                            "column": 24,
+                            "index": 184
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 37,
+                            "index": 197
+                          }
+                        },
+                        "extra": {
+                          "rawValue": "AUDIO_TRACK",
+                          "raw": "\"AUDIO_TRACK\""
+                        },
+                        "value": "AUDIO_TRACK"
+                      }
+                    },
+                    "right": {
+                      "type": "StringLiteral",
+                      "start": 201,
+                      "end": 213,
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 41,
+                          "index": 201
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 53,
+                          "index": 213
+                        }
+                      },
+                      "extra": {
+                        "rawValue": "audioTrack",
+                        "raw": "\"audioTrack\""
+                      },
+                      "value": "audioTrack"
+                    }
+                  }
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "start": 219,
+                  "end": 275,
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 4,
+                      "index": 219
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 60,
+                      "index": 275
+                    }
+                  },
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "start": 219,
+                    "end": 274,
+                    "loc": {
+                      "start": {
+                        "line": 6,
+                        "column": 4,
+                        "index": 219
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 59,
+                        "index": 274
+                      }
+                    },
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "start": 219,
+                      "end": 256,
+                      "loc": {
+                        "start": {
+                          "line": 6,
+                          "column": 4,
+                          "index": 219
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 41,
+                          "index": 256
+                        }
+                      },
+                      "object": {
+                        "type": "Identifier",
+                        "start": 219,
+                        "end": 238,
+                        "loc": {
+                          "start": {
+                            "line": 6,
+                            "column": 4,
+                            "index": 219
+                          },
+                          "end": {
+                            "line": 6,
+                            "column": 23,
+                            "index": 238
+                          },
+                          "identifierName": "PlaylistContextType"
+                        },
+                        "name": "PlaylistContextType"
+                      },
+                      "computed": true,
+                      "property": {
+                        "type": "StringLiteral",
+                        "start": 239,
+                        "end": 255,
+                        "loc": {
+                          "start": {
+                            "line": 6,
+                            "column": 24,
+                            "index": 239
+                          },
+                          "end": {
+                            "line": 6,
+                            "column": 40,
+                            "index": 255
+                          }
+                        },
+                        "extra": {
+                          "rawValue": "SUBTITLE_TRACK",
+                          "raw": "\"SUBTITLE_TRACK\""
+                        },
+                        "value": "SUBTITLE_TRACK"
+                      }
+                    },
+                    "right": {
+                      "type": "StringLiteral",
+                      "start": 259,
+                      "end": 274,
+                      "loc": {
+                        "start": {
+                          "line": 6,
+                          "column": 44,
+                          "index": 259
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 59,
+                          "index": 274
+                        }
+                      },
+                      "extra": {
+                        "rawValue": "subtitleTrack",
+                        "raw": "\"subtitleTrack\""
+                      },
+                      "value": "subtitleTrack"
+                    }
+                  }
+                }
+              ],
+              "directives": []
+            },
+            "extra": {
+              "parenthesized": true,
+              "parenStart": 32
+            }
+          },
+          "arguments": [
+            {
+              "type": "LogicalExpression",
+              "start": 279,
+              "end": 328,
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 3,
+                  "index": 279
+                },
+                "end": {
+                  "line": 7,
+                  "column": 52,
+                  "index": 328
+                }
+              },
+              "left": {
+                "type": "Identifier",
+                "start": 279,
+                "end": 298,
+                "loc": {
+                  "start": {
+                    "line": 7,
+                    "column": 3,
+                    "index": 279
+                  },
+                  "end": {
+                    "line": 7,
+                    "column": 22,
+                    "index": 298
+                  },
+                  "identifierName": "PlaylistContextType"
+                },
+                "name": "PlaylistContextType"
+              },
+              "operator": "||",
+              "right": {
+                "type": "AssignmentExpression",
+                "start": 303,
+                "end": 327,
+                "loc": {
+                  "start": {
+                    "line": 7,
+                    "column": 27,
+                    "index": 303
+                  },
+                  "end": {
+                    "line": 7,
+                    "column": 51,
+                    "index": 327
+                  }
+                },
+                "operator": "=",
+                "left": {
+                  "type": "Identifier",
+                  "start": 303,
+                  "end": 322,
+                  "loc": {
+                    "start": {
+                      "line": 7,
+                      "column": 27,
+                      "index": 303
+                    },
+                    "end": {
+                      "line": 7,
+                      "column": 46,
+                      "index": 322
+                    },
+                    "identifierName": "PlaylistContextType"
+                  },
+                  "name": "PlaylistContextType"
+                },
+                "right": {
+                  "type": "ObjectExpression",
+                  "start": 325,
+                  "end": 327,
+                  "loc": {
+                    "start": {
+                      "line": 7,
+                      "column": 49,
+                      "index": 325
+                    },
+                    "end": {
+                      "line": 7,
+                      "column": 51,
+                      "index": 327
+                    }
+                  },
+                  "properties": []
+                },
+                "extra": {
+                  "parenthesized": true,
+                  "parenStart": 302
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 331,
+        "end": 360,
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 0,
+            "index": 331
+          },
+          "end": {
+            "line": 8,
+            "column": 29,
+            "index": 360
+          }
+        },
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 338,
+          "end": 360,
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 7,
+              "index": 338
+            },
+            "end": {
+              "line": 8,
+              "column": 29,
+              "index": 360
+            }
+          },
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 342,
+              "end": 359,
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 11,
+                  "index": 342
+                },
+                "end": {
+                  "line": 8,
+                  "column": 28,
+                  "index": 359
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 342,
+                "end": 359,
+                "loc": {
+                  "start": {
+                    "line": 8,
+                    "column": 11,
+                    "index": 342
+                  },
+                  "end": {
+                    "line": 8,
+                    "column": 28,
+                    "index": 359
+                  },
+                  "identifierName": "PlaylistLevelType"
+                },
+                "name": "PlaylistLevelType"
+              },
+              "init": null
+            }
+          ],
+          "kind": "var",
+          "leadingComments": [],
+          "trailingComments": []
+        }
+      },
+      {
+        "type": "ExpressionStatement",
+        "start": 361,
+        "end": 573,
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 0,
+            "index": 361
+          },
+          "end": {
+            "line": 13,
+            "column": 50,
+            "index": 573
+          }
+        },
+        "expression": {
+          "type": "CallExpression",
+          "start": 361,
+          "end": 572,
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 0,
+              "index": 361
+            },
+            "end": {
+              "line": 13,
+              "column": 49,
+              "index": 572
+            }
+          },
+          "callee": {
+            "type": "FunctionExpression",
+            "start": 362,
+            "end": 524,
+            "loc": {
+              "start": {
+                "line": 9,
+                "column": 1,
+                "index": 362
+              },
+              "end": {
+                "line": 13,
+                "column": 1,
+                "index": 524
+              }
+            },
+            "id": null,
+            "generator": false,
+            "async": false,
+            "params": [
+              {
+                "type": "Identifier",
+                "start": 372,
+                "end": 389,
+                "loc": {
+                  "start": {
+                    "line": 9,
+                    "column": 11,
+                    "index": 372
+                  },
+                  "end": {
+                    "line": 9,
+                    "column": 28,
+                    "index": 389
+                  },
+                  "identifierName": "PlaylistLevelType"
+                },
+                "name": "PlaylistLevelType"
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "start": 391,
+              "end": 524,
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 30,
+                  "index": 391
+                },
+                "end": {
+                  "line": 13,
+                  "column": 1,
+                  "index": 524
+                }
+              },
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "start": 397,
+                  "end": 432,
+                  "loc": {
+                    "start": {
+                      "line": 10,
+                      "column": 4,
+                      "index": 397
+                    },
+                    "end": {
+                      "line": 10,
+                      "column": 39,
+                      "index": 432
+                    }
+                  },
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "start": 397,
+                    "end": 431,
+                    "loc": {
+                      "start": {
+                        "line": 10,
+                        "column": 4,
+                        "index": 397
+                      },
+                      "end": {
+                        "line": 10,
+                        "column": 38,
+                        "index": 431
+                      }
+                    },
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "start": 397,
+                      "end": 422,
+                      "loc": {
+                        "start": {
+                          "line": 10,
+                          "column": 4,
+                          "index": 397
+                        },
+                        "end": {
+                          "line": 10,
+                          "column": 29,
+                          "index": 422
+                        }
+                      },
+                      "object": {
+                        "type": "Identifier",
+                        "start": 397,
+                        "end": 414,
+                        "loc": {
+                          "start": {
+                            "line": 10,
+                            "column": 4,
+                            "index": 397
+                          },
+                          "end": {
+                            "line": 10,
+                            "column": 21,
+                            "index": 414
+                          },
+                          "identifierName": "PlaylistLevelType"
+                        },
+                        "name": "PlaylistLevelType"
+                      },
+                      "computed": true,
+                      "property": {
+                        "type": "StringLiteral",
+                        "start": 415,
+                        "end": 421,
+                        "loc": {
+                          "start": {
+                            "line": 10,
+                            "column": 22,
+                            "index": 415
+                          },
+                          "end": {
+                            "line": 10,
+                            "column": 28,
+                            "index": 421
+                          }
+                        },
+                        "extra": {
+                          "rawValue": "MAIN",
+                          "raw": "\"MAIN\""
+                        },
+                        "value": "MAIN"
+                      }
+                    },
+                    "right": {
+                      "type": "StringLiteral",
+                      "start": 425,
+                      "end": 431,
+                      "loc": {
+                        "start": {
+                          "line": 10,
+                          "column": 32,
+                          "index": 425
+                        },
+                        "end": {
+                          "line": 10,
+                          "column": 38,
+                          "index": 431
+                        }
+                      },
+                      "extra": {
+                        "rawValue": "main",
+                        "raw": "\"main\""
+                      },
+                      "value": "main"
+                    }
+                  }
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "start": 437,
+                  "end": 474,
+                  "loc": {
+                    "start": {
+                      "line": 11,
+                      "column": 4,
+                      "index": 437
+                    },
+                    "end": {
+                      "line": 11,
+                      "column": 41,
+                      "index": 474
+                    }
+                  },
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "start": 437,
+                    "end": 473,
+                    "loc": {
+                      "start": {
+                        "line": 11,
+                        "column": 4,
+                        "index": 437
+                      },
+                      "end": {
+                        "line": 11,
+                        "column": 40,
+                        "index": 473
+                      }
+                    },
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "start": 437,
+                      "end": 463,
+                      "loc": {
+                        "start": {
+                          "line": 11,
+                          "column": 4,
+                          "index": 437
+                        },
+                        "end": {
+                          "line": 11,
+                          "column": 30,
+                          "index": 463
+                        }
+                      },
+                      "object": {
+                        "type": "Identifier",
+                        "start": 437,
+                        "end": 454,
+                        "loc": {
+                          "start": {
+                            "line": 11,
+                            "column": 4,
+                            "index": 437
+                          },
+                          "end": {
+                            "line": 11,
+                            "column": 21,
+                            "index": 454
+                          },
+                          "identifierName": "PlaylistLevelType"
+                        },
+                        "name": "PlaylistLevelType"
+                      },
+                      "computed": true,
+                      "property": {
+                        "type": "StringLiteral",
+                        "start": 455,
+                        "end": 462,
+                        "loc": {
+                          "start": {
+                            "line": 11,
+                            "column": 22,
+                            "index": 455
+                          },
+                          "end": {
+                            "line": 11,
+                            "column": 29,
+                            "index": 462
+                          }
+                        },
+                        "extra": {
+                          "rawValue": "AUDIO",
+                          "raw": "\"AUDIO\""
+                        },
+                        "value": "AUDIO"
+                      }
+                    },
+                    "right": {
+                      "type": "StringLiteral",
+                      "start": 466,
+                      "end": 473,
+                      "loc": {
+                        "start": {
+                          "line": 11,
+                          "column": 33,
+                          "index": 466
+                        },
+                        "end": {
+                          "line": 11,
+                          "column": 40,
+                          "index": 473
+                        }
+                      },
+                      "extra": {
+                        "rawValue": "audio",
+                        "raw": "\"audio\""
+                      },
+                      "value": "audio"
+                    }
+                  }
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "start": 479,
+                  "end": 522,
+                  "loc": {
+                    "start": {
+                      "line": 12,
+                      "column": 4,
+                      "index": 479
+                    },
+                    "end": {
+                      "line": 12,
+                      "column": 47,
+                      "index": 522
+                    }
+                  },
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "start": 479,
+                    "end": 521,
+                    "loc": {
+                      "start": {
+                        "line": 12,
+                        "column": 4,
+                        "index": 479
+                      },
+                      "end": {
+                        "line": 12,
+                        "column": 46,
+                        "index": 521
+                      }
+                    },
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "start": 479,
+                      "end": 508,
+                      "loc": {
+                        "start": {
+                          "line": 12,
+                          "column": 4,
+                          "index": 479
+                        },
+                        "end": {
+                          "line": 12,
+                          "column": 33,
+                          "index": 508
+                        }
+                      },
+                      "object": {
+                        "type": "Identifier",
+                        "start": 479,
+                        "end": 496,
+                        "loc": {
+                          "start": {
+                            "line": 12,
+                            "column": 4,
+                            "index": 479
+                          },
+                          "end": {
+                            "line": 12,
+                            "column": 21,
+                            "index": 496
+                          },
+                          "identifierName": "PlaylistLevelType"
+                        },
+                        "name": "PlaylistLevelType"
+                      },
+                      "computed": true,
+                      "property": {
+                        "type": "StringLiteral",
+                        "start": 497,
+                        "end": 507,
+                        "loc": {
+                          "start": {
+                            "line": 12,
+                            "column": 22,
+                            "index": 497
+                          },
+                          "end": {
+                            "line": 12,
+                            "column": 32,
+                            "index": 507
+                          }
+                        },
+                        "extra": {
+                          "rawValue": "SUBTITLE",
+                          "raw": "\"SUBTITLE\""
+                        },
+                        "value": "SUBTITLE"
+                      }
+                    },
+                    "right": {
+                      "type": "StringLiteral",
+                      "start": 511,
+                      "end": 521,
+                      "loc": {
+                        "start": {
+                          "line": 12,
+                          "column": 36,
+                          "index": 511
+                        },
+                        "end": {
+                          "line": 12,
+                          "column": 46,
+                          "index": 521
+                        }
+                      },
+                      "extra": {
+                        "rawValue": "subtitle",
+                        "raw": "\"subtitle\""
+                      },
+                      "value": "subtitle"
+                    }
+                  }
+                }
+              ],
+              "directives": []
+            },
+            "extra": {
+              "parenthesized": true,
+              "parenStart": 361
+            }
+          },
+          "arguments": [
+            {
+              "type": "LogicalExpression",
+              "start": 526,
+              "end": 571,
+              "loc": {
+                "start": {
+                  "line": 13,
+                  "column": 3,
+                  "index": 526
+                },
+                "end": {
+                  "line": 13,
+                  "column": 48,
+                  "index": 571
+                }
+              },
+              "left": {
+                "type": "Identifier",
+                "start": 526,
+                "end": 543,
+                "loc": {
+                  "start": {
+                    "line": 13,
+                    "column": 3,
+                    "index": 526
+                  },
+                  "end": {
+                    "line": 13,
+                    "column": 20,
+                    "index": 543
+                  },
+                  "identifierName": "PlaylistLevelType"
+                },
+                "name": "PlaylistLevelType"
+              },
+              "operator": "||",
+              "right": {
+                "type": "AssignmentExpression",
+                "start": 548,
+                "end": 570,
+                "loc": {
+                  "start": {
+                    "line": 13,
+                    "column": 25,
+                    "index": 548
+                  },
+                  "end": {
+                    "line": 13,
+                    "column": 47,
+                    "index": 570
+                  }
+                },
+                "operator": "=",
+                "left": {
+                  "type": "Identifier",
+                  "start": 548,
+                  "end": 565,
+                  "loc": {
+                    "start": {
+                      "line": 13,
+                      "column": 25,
+                      "index": 548
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 42,
+                      "index": 565
+                    },
+                    "identifierName": "PlaylistLevelType"
+                  },
+                  "name": "PlaylistLevelType"
+                },
+                "right": {
+                  "type": "ObjectExpression",
+                  "start": 568,
+                  "end": 570,
+                  "loc": {
+                    "start": {
+                      "line": 13,
+                      "column": 45,
+                      "index": 568
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 47,
+                      "index": 570
+                    }
+                  },
+                  "properties": []
+                },
+                "extra": {
+                  "parenthesized": true,
+                  "parenStart": 547
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "directives": []
+  },
+  "comments": []
+}

@@ -1,0 +1,2129 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 1327,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0,
+      "index": 0
+    },
+    "end": {
+      "line": 71,
+      "column": 0,
+      "index": 1327
+    }
+  },
+  "errors": [],
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 1327,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0,
+        "index": 0
+      },
+      "end": {
+        "line": 71,
+        "column": 0,
+        "index": 1327
+      }
+    },
+    "sourceType": "module",
+    "interpreter": null,
+    "body": [
+      {
+        "type": "VariableDeclaration",
+        "start": 0,
+        "end": 36,
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+          },
+          "end": {
+            "line": 1,
+            "column": 36,
+            "index": 36
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 6,
+            "end": 35,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 6,
+                "index": 6
+              },
+              "end": {
+                "line": 1,
+                "column": 35,
+                "index": 35
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 6,
+              "end": 27,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 6,
+                  "index": 6
+                },
+                "end": {
+                  "line": 1,
+                  "column": 27,
+                  "index": 27
+                },
+                "identifierName": "MPEG_TS_CLOCK_FREQ_HZ"
+              },
+              "name": "MPEG_TS_CLOCK_FREQ_HZ"
+            },
+            "init": {
+              "type": "NumericLiteral",
+              "start": 30,
+              "end": 35,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 30,
+                  "index": 30
+                },
+                "end": {
+                  "line": 1,
+                  "column": 35,
+                  "index": 35
+                }
+              },
+              "extra": {
+                "rawValue": 90000,
+                "raw": "90000"
+              },
+              "value": 90000
+            }
+          }
+        ],
+        "kind": "const",
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * @desc\n *\n * @lineNumber\n * 3\n * @param\n * {undefined} value\n * @param\n * {number} destScale\n * @param\n * {number} srcBase\n * @param\n * {boolean} round\n * @return\n * {number}\n ",
+            "start": 37,
+            "end": 221,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0,
+                "index": 37
+              },
+              "end": {
+                "line": 17,
+                "column": 3,
+                "index": 221
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 222,
+        "end": 451,
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 0,
+            "index": 222
+          },
+          "end": {
+            "line": 21,
+            "column": 1,
+            "index": 451
+          }
+        },
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "FunctionDeclaration",
+          "start": 229,
+          "end": 451,
+          "loc": {
+            "start": {
+              "line": 18,
+              "column": 7,
+              "index": 229
+            },
+            "end": {
+              "line": 21,
+              "column": 1,
+              "index": 451
+            }
+          },
+          "id": {
+            "type": "Identifier",
+            "start": 238,
+            "end": 257,
+            "loc": {
+              "start": {
+                "line": 18,
+                "column": 16,
+                "index": 238
+              },
+              "end": {
+                "line": 18,
+                "column": 35,
+                "index": 257
+              },
+              "identifierName": "toTimescaleFromBase"
+            },
+            "name": "toTimescaleFromBase"
+          },
+          "generator": false,
+          "async": false,
+          "params": [
+            {
+              "type": "Identifier",
+              "start": 258,
+              "end": 263,
+              "loc": {
+                "start": {
+                  "line": 18,
+                  "column": 36,
+                  "index": 258
+                },
+                "end": {
+                  "line": 18,
+                  "column": 41,
+                  "index": 263
+                },
+                "identifierName": "value"
+              },
+              "name": "value"
+            },
+            {
+              "type": "Identifier",
+              "start": 265,
+              "end": 274,
+              "loc": {
+                "start": {
+                  "line": 18,
+                  "column": 43,
+                  "index": 265
+                },
+                "end": {
+                  "line": 18,
+                  "column": 52,
+                  "index": 274
+                },
+                "identifierName": "destScale"
+              },
+              "name": "destScale"
+            },
+            {
+              "type": "AssignmentPattern",
+              "start": 276,
+              "end": 287,
+              "loc": {
+                "start": {
+                  "line": 18,
+                  "column": 54,
+                  "index": 276
+                },
+                "end": {
+                  "line": 18,
+                  "column": 65,
+                  "index": 287
+                }
+              },
+              "left": {
+                "type": "Identifier",
+                "start": 276,
+                "end": 283,
+                "loc": {
+                  "start": {
+                    "line": 18,
+                    "column": 54,
+                    "index": 276
+                  },
+                  "end": {
+                    "line": 18,
+                    "column": 61,
+                    "index": 283
+                  },
+                  "identifierName": "srcBase"
+                },
+                "name": "srcBase"
+              },
+              "right": {
+                "type": "NumericLiteral",
+                "start": 286,
+                "end": 287,
+                "loc": {
+                  "start": {
+                    "line": 18,
+                    "column": 64,
+                    "index": 286
+                  },
+                  "end": {
+                    "line": 18,
+                    "column": 65,
+                    "index": 287
+                  }
+                },
+                "extra": {
+                  "rawValue": 1,
+                  "raw": "1"
+                },
+                "value": 1
+              }
+            },
+            {
+              "type": "AssignmentPattern",
+              "start": 289,
+              "end": 302,
+              "loc": {
+                "start": {
+                  "line": 18,
+                  "column": 67,
+                  "index": 289
+                },
+                "end": {
+                  "line": 18,
+                  "column": 80,
+                  "index": 302
+                }
+              },
+              "left": {
+                "type": "Identifier",
+                "start": 289,
+                "end": 294,
+                "loc": {
+                  "start": {
+                    "line": 18,
+                    "column": 67,
+                    "index": 289
+                  },
+                  "end": {
+                    "line": 18,
+                    "column": 72,
+                    "index": 294
+                  },
+                  "identifierName": "round"
+                },
+                "name": "round"
+              },
+              "right": {
+                "type": "BooleanLiteral",
+                "start": 297,
+                "end": 302,
+                "loc": {
+                  "start": {
+                    "line": 18,
+                    "column": 75,
+                    "index": 297
+                  },
+                  "end": {
+                    "line": 18,
+                    "column": 80,
+                    "index": 302
+                  }
+                },
+                "value": false
+              }
+            }
+          ],
+          "body": {
+            "type": "BlockStatement",
+            "start": 304,
+            "end": 451,
+            "loc": {
+              "start": {
+                "line": 18,
+                "column": 82,
+                "index": 304
+              },
+              "end": {
+                "line": 21,
+                "column": 1,
+                "index": 451
+              }
+            },
+            "body": [
+              {
+                "type": "VariableDeclaration",
+                "start": 310,
+                "end": 353,
+                "loc": {
+                  "start": {
+                    "line": 19,
+                    "column": 4,
+                    "index": 310
+                  },
+                  "end": {
+                    "line": 19,
+                    "column": 47,
+                    "index": 353
+                  }
+                },
+                "declarations": [
+                  {
+                    "type": "VariableDeclarator",
+                    "start": 316,
+                    "end": 352,
+                    "loc": {
+                      "start": {
+                        "line": 19,
+                        "column": 10,
+                        "index": 316
+                      },
+                      "end": {
+                        "line": 19,
+                        "column": 46,
+                        "index": 352
+                      }
+                    },
+                    "id": {
+                      "type": "Identifier",
+                      "start": 316,
+                      "end": 322,
+                      "loc": {
+                        "start": {
+                          "line": 19,
+                          "column": 10,
+                          "index": 316
+                        },
+                        "end": {
+                          "line": 19,
+                          "column": 16,
+                          "index": 322
+                        },
+                        "identifierName": "result"
+                      },
+                      "name": "result"
+                    },
+                    "init": {
+                      "type": "BinaryExpression",
+                      "start": 325,
+                      "end": 352,
+                      "loc": {
+                        "start": {
+                          "line": 19,
+                          "column": 19,
+                          "index": 325
+                        },
+                        "end": {
+                          "line": 19,
+                          "column": 46,
+                          "index": 352
+                        }
+                      },
+                      "left": {
+                        "type": "BinaryExpression",
+                        "start": 325,
+                        "end": 342,
+                        "loc": {
+                          "start": {
+                            "line": 19,
+                            "column": 19,
+                            "index": 325
+                          },
+                          "end": {
+                            "line": 19,
+                            "column": 36,
+                            "index": 342
+                          }
+                        },
+                        "left": {
+                          "type": "Identifier",
+                          "start": 325,
+                          "end": 330,
+                          "loc": {
+                            "start": {
+                              "line": 19,
+                              "column": 19,
+                              "index": 325
+                            },
+                            "end": {
+                              "line": 19,
+                              "column": 24,
+                              "index": 330
+                            },
+                            "identifierName": "value"
+                          },
+                          "name": "value"
+                        },
+                        "operator": "*",
+                        "right": {
+                          "type": "Identifier",
+                          "start": 333,
+                          "end": 342,
+                          "loc": {
+                            "start": {
+                              "line": 19,
+                              "column": 27,
+                              "index": 333
+                            },
+                            "end": {
+                              "line": 19,
+                              "column": 36,
+                              "index": 342
+                            },
+                            "identifierName": "destScale"
+                          },
+                          "name": "destScale"
+                        }
+                      },
+                      "operator": "*",
+                      "right": {
+                        "type": "Identifier",
+                        "start": 345,
+                        "end": 352,
+                        "loc": {
+                          "start": {
+                            "line": 19,
+                            "column": 39,
+                            "index": 345
+                          },
+                          "end": {
+                            "line": 19,
+                            "column": 46,
+                            "index": 352
+                          },
+                          "identifierName": "srcBase"
+                        },
+                        "name": "srcBase"
+                      }
+                    }
+                  }
+                ],
+                "kind": "const",
+                "trailingComments": [
+                  {
+                    "type": "CommentLine",
+                    "value": " equivalent to `(value * scale) / (1 / base)`",
+                    "start": 354,
+                    "end": 401,
+                    "loc": {
+                      "start": {
+                        "line": 19,
+                        "column": 48,
+                        "index": 354
+                      },
+                      "end": {
+                        "line": 19,
+                        "column": 95,
+                        "index": 401
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ReturnStatement",
+                "start": 406,
+                "end": 449,
+                "loc": {
+                  "start": {
+                    "line": 20,
+                    "column": 4,
+                    "index": 406
+                  },
+                  "end": {
+                    "line": 20,
+                    "column": 47,
+                    "index": 449
+                  }
+                },
+                "argument": {
+                  "type": "ConditionalExpression",
+                  "start": 413,
+                  "end": 448,
+                  "loc": {
+                    "start": {
+                      "line": 20,
+                      "column": 11,
+                      "index": 413
+                    },
+                    "end": {
+                      "line": 20,
+                      "column": 46,
+                      "index": 448
+                    }
+                  },
+                  "test": {
+                    "type": "Identifier",
+                    "start": 413,
+                    "end": 418,
+                    "loc": {
+                      "start": {
+                        "line": 20,
+                        "column": 11,
+                        "index": 413
+                      },
+                      "end": {
+                        "line": 20,
+                        "column": 16,
+                        "index": 418
+                      },
+                      "identifierName": "round"
+                    },
+                    "name": "round"
+                  },
+                  "consequent": {
+                    "type": "CallExpression",
+                    "start": 421,
+                    "end": 439,
+                    "loc": {
+                      "start": {
+                        "line": 20,
+                        "column": 19,
+                        "index": 421
+                      },
+                      "end": {
+                        "line": 20,
+                        "column": 37,
+                        "index": 439
+                      }
+                    },
+                    "callee": {
+                      "type": "MemberExpression",
+                      "start": 421,
+                      "end": 431,
+                      "loc": {
+                        "start": {
+                          "line": 20,
+                          "column": 19,
+                          "index": 421
+                        },
+                        "end": {
+                          "line": 20,
+                          "column": 29,
+                          "index": 431
+                        }
+                      },
+                      "object": {
+                        "type": "Identifier",
+                        "start": 421,
+                        "end": 425,
+                        "loc": {
+                          "start": {
+                            "line": 20,
+                            "column": 19,
+                            "index": 421
+                          },
+                          "end": {
+                            "line": 20,
+                            "column": 23,
+                            "index": 425
+                          },
+                          "identifierName": "Math"
+                        },
+                        "name": "Math"
+                      },
+                      "computed": false,
+                      "property": {
+                        "type": "Identifier",
+                        "start": 426,
+                        "end": 431,
+                        "loc": {
+                          "start": {
+                            "line": 20,
+                            "column": 24,
+                            "index": 426
+                          },
+                          "end": {
+                            "line": 20,
+                            "column": 29,
+                            "index": 431
+                          },
+                          "identifierName": "round"
+                        },
+                        "name": "round"
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "type": "Identifier",
+                        "start": 432,
+                        "end": 438,
+                        "loc": {
+                          "start": {
+                            "line": 20,
+                            "column": 30,
+                            "index": 432
+                          },
+                          "end": {
+                            "line": 20,
+                            "column": 36,
+                            "index": 438
+                          },
+                          "identifierName": "result"
+                        },
+                        "name": "result"
+                      }
+                    ]
+                  },
+                  "alternate": {
+                    "type": "Identifier",
+                    "start": 442,
+                    "end": 448,
+                    "loc": {
+                      "start": {
+                        "line": 20,
+                        "column": 40,
+                        "index": 442
+                      },
+                      "end": {
+                        "line": 20,
+                        "column": 46,
+                        "index": 448
+                      },
+                      "identifierName": "result"
+                    },
+                    "name": "result"
+                  }
+                },
+                "leadingComments": [
+                  {
+                    "type": "CommentLine",
+                    "value": " equivalent to `(value * scale) / (1 / base)`",
+                    "start": 354,
+                    "end": 401,
+                    "loc": {
+                      "start": {
+                        "line": 19,
+                        "column": 48,
+                        "index": 354
+                      },
+                      "end": {
+                        "line": 19,
+                        "column": 95,
+                        "index": 401
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "directives": []
+          },
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * @desc\n *\n * @lineNumber\n * 3\n * @param\n * {undefined} value\n * @param\n * {number} destScale\n * @param\n * {number} srcBase\n * @param\n * {boolean} round\n * @return\n * {number}\n ",
+              "start": 37,
+              "end": 221,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 0,
+                  "index": 37
+                },
+                "end": {
+                  "line": 17,
+                  "column": 3,
+                  "index": 221
+                }
+              }
+            }
+          ],
+          "trailingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * @desc\n *\n * @lineNumber\n * 13\n * @param\n * {undefined} value\n * @param\n * {number} destScale\n * @param\n * {number} srcScale\n * @param\n * {boolean} round\n * @return\n * {number}\n ",
+              "start": 452,
+              "end": 638,
+              "loc": {
+                "start": {
+                  "line": 22,
+                  "column": 0,
+                  "index": 452
+                },
+                "end": {
+                  "line": 37,
+                  "column": 3,
+                  "index": 638
+                }
+              }
+            }
+          ]
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * @desc\n *\n * @lineNumber\n * 13\n * @param\n * {undefined} value\n * @param\n * {number} destScale\n * @param\n * {number} srcScale\n * @param\n * {boolean} round\n * @return\n * {number}\n ",
+            "start": 452,
+            "end": 638,
+            "loc": {
+              "start": {
+                "line": 22,
+                "column": 0,
+                "index": 452
+              },
+              "end": {
+                "line": 37,
+                "column": 3,
+                "index": 638
+              }
+            }
+          }
+        ],
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * @desc\n *\n * @lineNumber\n * 3\n * @param\n * {undefined} value\n * @param\n * {number} destScale\n * @param\n * {number} srcBase\n * @param\n * {boolean} round\n * @return\n * {number}\n ",
+            "start": 37,
+            "end": 221,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0,
+                "index": 37
+              },
+              "end": {
+                "line": 17,
+                "column": 3,
+                "index": 221
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 639,
+        "end": 797,
+        "loc": {
+          "start": {
+            "line": 38,
+            "column": 0,
+            "index": 639
+          },
+          "end": {
+            "line": 40,
+            "column": 1,
+            "index": 797
+          }
+        },
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "FunctionDeclaration",
+          "start": 646,
+          "end": 797,
+          "loc": {
+            "start": {
+              "line": 38,
+              "column": 7,
+              "index": 646
+            },
+            "end": {
+              "line": 40,
+              "column": 1,
+              "index": 797
+            }
+          },
+          "id": {
+            "type": "Identifier",
+            "start": 655,
+            "end": 675,
+            "loc": {
+              "start": {
+                "line": 38,
+                "column": 16,
+                "index": 655
+              },
+              "end": {
+                "line": 38,
+                "column": 36,
+                "index": 675
+              },
+              "identifierName": "toTimescaleFromScale"
+            },
+            "name": "toTimescaleFromScale"
+          },
+          "generator": false,
+          "async": false,
+          "params": [
+            {
+              "type": "Identifier",
+              "start": 676,
+              "end": 681,
+              "loc": {
+                "start": {
+                  "line": 38,
+                  "column": 37,
+                  "index": 676
+                },
+                "end": {
+                  "line": 38,
+                  "column": 42,
+                  "index": 681
+                },
+                "identifierName": "value"
+              },
+              "name": "value"
+            },
+            {
+              "type": "Identifier",
+              "start": 683,
+              "end": 692,
+              "loc": {
+                "start": {
+                  "line": 38,
+                  "column": 44,
+                  "index": 683
+                },
+                "end": {
+                  "line": 38,
+                  "column": 53,
+                  "index": 692
+                },
+                "identifierName": "destScale"
+              },
+              "name": "destScale"
+            },
+            {
+              "type": "AssignmentPattern",
+              "start": 694,
+              "end": 706,
+              "loc": {
+                "start": {
+                  "line": 38,
+                  "column": 55,
+                  "index": 694
+                },
+                "end": {
+                  "line": 38,
+                  "column": 67,
+                  "index": 706
+                }
+              },
+              "left": {
+                "type": "Identifier",
+                "start": 694,
+                "end": 702,
+                "loc": {
+                  "start": {
+                    "line": 38,
+                    "column": 55,
+                    "index": 694
+                  },
+                  "end": {
+                    "line": 38,
+                    "column": 63,
+                    "index": 702
+                  },
+                  "identifierName": "srcScale"
+                },
+                "name": "srcScale"
+              },
+              "right": {
+                "type": "NumericLiteral",
+                "start": 705,
+                "end": 706,
+                "loc": {
+                  "start": {
+                    "line": 38,
+                    "column": 66,
+                    "index": 705
+                  },
+                  "end": {
+                    "line": 38,
+                    "column": 67,
+                    "index": 706
+                  }
+                },
+                "extra": {
+                  "rawValue": 1,
+                  "raw": "1"
+                },
+                "value": 1
+              }
+            },
+            {
+              "type": "AssignmentPattern",
+              "start": 708,
+              "end": 721,
+              "loc": {
+                "start": {
+                  "line": 38,
+                  "column": 69,
+                  "index": 708
+                },
+                "end": {
+                  "line": 38,
+                  "column": 82,
+                  "index": 721
+                }
+              },
+              "left": {
+                "type": "Identifier",
+                "start": 708,
+                "end": 713,
+                "loc": {
+                  "start": {
+                    "line": 38,
+                    "column": 69,
+                    "index": 708
+                  },
+                  "end": {
+                    "line": 38,
+                    "column": 74,
+                    "index": 713
+                  },
+                  "identifierName": "round"
+                },
+                "name": "round"
+              },
+              "right": {
+                "type": "BooleanLiteral",
+                "start": 716,
+                "end": 721,
+                "loc": {
+                  "start": {
+                    "line": 38,
+                    "column": 77,
+                    "index": 716
+                  },
+                  "end": {
+                    "line": 38,
+                    "column": 82,
+                    "index": 721
+                  }
+                },
+                "value": false
+              }
+            }
+          ],
+          "body": {
+            "type": "BlockStatement",
+            "start": 723,
+            "end": 797,
+            "loc": {
+              "start": {
+                "line": 38,
+                "column": 84,
+                "index": 723
+              },
+              "end": {
+                "line": 40,
+                "column": 1,
+                "index": 797
+              }
+            },
+            "body": [
+              {
+                "type": "ReturnStatement",
+                "start": 729,
+                "end": 795,
+                "loc": {
+                  "start": {
+                    "line": 39,
+                    "column": 4,
+                    "index": 729
+                  },
+                  "end": {
+                    "line": 39,
+                    "column": 70,
+                    "index": 795
+                  }
+                },
+                "argument": {
+                  "type": "CallExpression",
+                  "start": 736,
+                  "end": 794,
+                  "loc": {
+                    "start": {
+                      "line": 39,
+                      "column": 11,
+                      "index": 736
+                    },
+                    "end": {
+                      "line": 39,
+                      "column": 69,
+                      "index": 794
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 736,
+                    "end": 755,
+                    "loc": {
+                      "start": {
+                        "line": 39,
+                        "column": 11,
+                        "index": 736
+                      },
+                      "end": {
+                        "line": 39,
+                        "column": 30,
+                        "index": 755
+                      },
+                      "identifierName": "toTimescaleFromBase"
+                    },
+                    "name": "toTimescaleFromBase"
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "start": 756,
+                      "end": 761,
+                      "loc": {
+                        "start": {
+                          "line": 39,
+                          "column": 31,
+                          "index": 756
+                        },
+                        "end": {
+                          "line": 39,
+                          "column": 36,
+                          "index": 761
+                        },
+                        "identifierName": "value"
+                      },
+                      "name": "value"
+                    },
+                    {
+                      "type": "Identifier",
+                      "start": 763,
+                      "end": 772,
+                      "loc": {
+                        "start": {
+                          "line": 39,
+                          "column": 38,
+                          "index": 763
+                        },
+                        "end": {
+                          "line": 39,
+                          "column": 47,
+                          "index": 772
+                        },
+                        "identifierName": "destScale"
+                      },
+                      "name": "destScale"
+                    },
+                    {
+                      "type": "BinaryExpression",
+                      "start": 774,
+                      "end": 786,
+                      "loc": {
+                        "start": {
+                          "line": 39,
+                          "column": 49,
+                          "index": 774
+                        },
+                        "end": {
+                          "line": 39,
+                          "column": 61,
+                          "index": 786
+                        }
+                      },
+                      "left": {
+                        "type": "NumericLiteral",
+                        "start": 774,
+                        "end": 775,
+                        "loc": {
+                          "start": {
+                            "line": 39,
+                            "column": 49,
+                            "index": 774
+                          },
+                          "end": {
+                            "line": 39,
+                            "column": 50,
+                            "index": 775
+                          }
+                        },
+                        "extra": {
+                          "rawValue": 1,
+                          "raw": "1"
+                        },
+                        "value": 1
+                      },
+                      "operator": "/",
+                      "right": {
+                        "type": "Identifier",
+                        "start": 778,
+                        "end": 786,
+                        "loc": {
+                          "start": {
+                            "line": 39,
+                            "column": 53,
+                            "index": 778
+                          },
+                          "end": {
+                            "line": 39,
+                            "column": 61,
+                            "index": 786
+                          },
+                          "identifierName": "srcScale"
+                        },
+                        "name": "srcScale"
+                      }
+                    },
+                    {
+                      "type": "Identifier",
+                      "start": 788,
+                      "end": 793,
+                      "loc": {
+                        "start": {
+                          "line": 39,
+                          "column": 63,
+                          "index": 788
+                        },
+                        "end": {
+                          "line": 39,
+                          "column": 68,
+                          "index": 793
+                        },
+                        "identifierName": "round"
+                      },
+                      "name": "round"
+                    }
+                  ]
+                }
+              }
+            ],
+            "directives": []
+          },
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * @desc\n *\n * @lineNumber\n * 13\n * @param\n * {undefined} value\n * @param\n * {number} destScale\n * @param\n * {number} srcScale\n * @param\n * {boolean} round\n * @return\n * {number}\n ",
+              "start": 452,
+              "end": 638,
+              "loc": {
+                "start": {
+                  "line": 22,
+                  "column": 0,
+                  "index": 452
+                },
+                "end": {
+                  "line": 37,
+                  "column": 3,
+                  "index": 638
+                }
+              }
+            }
+          ],
+          "trailingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * @desc\n *\n * @lineNumber\n * 22\n * @param\n * {number} value\n * @param\n * {boolean} round\n * @return\n * {number}\n ",
+              "start": 798,
+              "end": 918,
+              "loc": {
+                "start": {
+                  "line": 41,
+                  "column": 0,
+                  "index": 798
+                },
+                "end": {
+                  "line": 52,
+                  "column": 3,
+                  "index": 918
+                }
+              }
+            }
+          ]
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * @desc\n *\n * @lineNumber\n * 22\n * @param\n * {number} value\n * @param\n * {boolean} round\n * @return\n * {number}\n ",
+            "start": 798,
+            "end": 918,
+            "loc": {
+              "start": {
+                "line": 41,
+                "column": 0,
+                "index": 798
+              },
+              "end": {
+                "line": 52,
+                "column": 3,
+                "index": 918
+              }
+            }
+          }
+        ],
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * @desc\n *\n * @lineNumber\n * 13\n * @param\n * {undefined} value\n * @param\n * {number} destScale\n * @param\n * {number} srcScale\n * @param\n * {boolean} round\n * @return\n * {number}\n ",
+            "start": 452,
+            "end": 638,
+            "loc": {
+              "start": {
+                "line": 22,
+                "column": 0,
+                "index": 452
+              },
+              "end": {
+                "line": 37,
+                "column": 3,
+                "index": 638
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 919,
+        "end": 1059,
+        "loc": {
+          "start": {
+            "line": 53,
+            "column": 0,
+            "index": 919
+          },
+          "end": {
+            "line": 55,
+            "column": 1,
+            "index": 1059
+          }
+        },
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "FunctionDeclaration",
+          "start": 926,
+          "end": 1059,
+          "loc": {
+            "start": {
+              "line": 53,
+              "column": 7,
+              "index": 926
+            },
+            "end": {
+              "line": 55,
+              "column": 1,
+              "index": 1059
+            }
+          },
+          "id": {
+            "type": "Identifier",
+            "start": 935,
+            "end": 954,
+            "loc": {
+              "start": {
+                "line": 53,
+                "column": 16,
+                "index": 935
+              },
+              "end": {
+                "line": 53,
+                "column": 35,
+                "index": 954
+              },
+              "identifierName": "toMsFromMpegTsClock"
+            },
+            "name": "toMsFromMpegTsClock"
+          },
+          "generator": false,
+          "async": false,
+          "params": [
+            {
+              "type": "Identifier",
+              "start": 955,
+              "end": 960,
+              "loc": {
+                "start": {
+                  "line": 53,
+                  "column": 36,
+                  "index": 955
+                },
+                "end": {
+                  "line": 53,
+                  "column": 41,
+                  "index": 960
+                },
+                "identifierName": "value"
+              },
+              "name": "value"
+            },
+            {
+              "type": "AssignmentPattern",
+              "start": 962,
+              "end": 975,
+              "loc": {
+                "start": {
+                  "line": 53,
+                  "column": 43,
+                  "index": 962
+                },
+                "end": {
+                  "line": 53,
+                  "column": 56,
+                  "index": 975
+                }
+              },
+              "left": {
+                "type": "Identifier",
+                "start": 962,
+                "end": 967,
+                "loc": {
+                  "start": {
+                    "line": 53,
+                    "column": 43,
+                    "index": 962
+                  },
+                  "end": {
+                    "line": 53,
+                    "column": 48,
+                    "index": 967
+                  },
+                  "identifierName": "round"
+                },
+                "name": "round"
+              },
+              "right": {
+                "type": "BooleanLiteral",
+                "start": 970,
+                "end": 975,
+                "loc": {
+                  "start": {
+                    "line": 53,
+                    "column": 51,
+                    "index": 970
+                  },
+                  "end": {
+                    "line": 53,
+                    "column": 56,
+                    "index": 975
+                  }
+                },
+                "value": false
+              }
+            }
+          ],
+          "body": {
+            "type": "BlockStatement",
+            "start": 977,
+            "end": 1059,
+            "loc": {
+              "start": {
+                "line": 53,
+                "column": 58,
+                "index": 977
+              },
+              "end": {
+                "line": 55,
+                "column": 1,
+                "index": 1059
+              }
+            },
+            "body": [
+              {
+                "type": "ReturnStatement",
+                "start": 983,
+                "end": 1057,
+                "loc": {
+                  "start": {
+                    "line": 54,
+                    "column": 4,
+                    "index": 983
+                  },
+                  "end": {
+                    "line": 54,
+                    "column": 78,
+                    "index": 1057
+                  }
+                },
+                "argument": {
+                  "type": "CallExpression",
+                  "start": 990,
+                  "end": 1056,
+                  "loc": {
+                    "start": {
+                      "line": 54,
+                      "column": 11,
+                      "index": 990
+                    },
+                    "end": {
+                      "line": 54,
+                      "column": 77,
+                      "index": 1056
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 990,
+                    "end": 1009,
+                    "loc": {
+                      "start": {
+                        "line": 54,
+                        "column": 11,
+                        "index": 990
+                      },
+                      "end": {
+                        "line": 54,
+                        "column": 30,
+                        "index": 1009
+                      },
+                      "identifierName": "toTimescaleFromBase"
+                    },
+                    "name": "toTimescaleFromBase"
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "start": 1010,
+                      "end": 1015,
+                      "loc": {
+                        "start": {
+                          "line": 54,
+                          "column": 31,
+                          "index": 1010
+                        },
+                        "end": {
+                          "line": 54,
+                          "column": 36,
+                          "index": 1015
+                        },
+                        "identifierName": "value"
+                      },
+                      "name": "value"
+                    },
+                    {
+                      "type": "NumericLiteral",
+                      "start": 1017,
+                      "end": 1021,
+                      "loc": {
+                        "start": {
+                          "line": 54,
+                          "column": 38,
+                          "index": 1017
+                        },
+                        "end": {
+                          "line": 54,
+                          "column": 42,
+                          "index": 1021
+                        }
+                      },
+                      "extra": {
+                        "rawValue": 1000,
+                        "raw": "1000"
+                      },
+                      "value": 1000
+                    },
+                    {
+                      "type": "BinaryExpression",
+                      "start": 1023,
+                      "end": 1048,
+                      "loc": {
+                        "start": {
+                          "line": 54,
+                          "column": 44,
+                          "index": 1023
+                        },
+                        "end": {
+                          "line": 54,
+                          "column": 69,
+                          "index": 1048
+                        }
+                      },
+                      "left": {
+                        "type": "NumericLiteral",
+                        "start": 1023,
+                        "end": 1024,
+                        "loc": {
+                          "start": {
+                            "line": 54,
+                            "column": 44,
+                            "index": 1023
+                          },
+                          "end": {
+                            "line": 54,
+                            "column": 45,
+                            "index": 1024
+                          }
+                        },
+                        "extra": {
+                          "rawValue": 1,
+                          "raw": "1"
+                        },
+                        "value": 1
+                      },
+                      "operator": "/",
+                      "right": {
+                        "type": "Identifier",
+                        "start": 1027,
+                        "end": 1048,
+                        "loc": {
+                          "start": {
+                            "line": 54,
+                            "column": 48,
+                            "index": 1027
+                          },
+                          "end": {
+                            "line": 54,
+                            "column": 69,
+                            "index": 1048
+                          },
+                          "identifierName": "MPEG_TS_CLOCK_FREQ_HZ"
+                        },
+                        "name": "MPEG_TS_CLOCK_FREQ_HZ"
+                      }
+                    },
+                    {
+                      "type": "Identifier",
+                      "start": 1050,
+                      "end": 1055,
+                      "loc": {
+                        "start": {
+                          "line": 54,
+                          "column": 71,
+                          "index": 1050
+                        },
+                        "end": {
+                          "line": 54,
+                          "column": 76,
+                          "index": 1055
+                        },
+                        "identifierName": "round"
+                      },
+                      "name": "round"
+                    }
+                  ]
+                }
+              }
+            ],
+            "directives": []
+          },
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * @desc\n *\n * @lineNumber\n * 22\n * @param\n * {number} value\n * @param\n * {boolean} round\n * @return\n * {number}\n ",
+              "start": 798,
+              "end": 918,
+              "loc": {
+                "start": {
+                  "line": 41,
+                  "column": 0,
+                  "index": 798
+                },
+                "end": {
+                  "line": 52,
+                  "column": 3,
+                  "index": 918
+                }
+              }
+            }
+          ],
+          "trailingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * @desc\n *\n * @lineNumber\n * 29\n * @param\n * {number} value\n * @param\n * {number} srcScale\n * @return\n * {number}\n ",
+              "start": 1060,
+              "end": 1182,
+              "loc": {
+                "start": {
+                  "line": 56,
+                  "column": 0,
+                  "index": 1060
+                },
+                "end": {
+                  "line": 67,
+                  "column": 3,
+                  "index": 1182
+                }
+              }
+            }
+          ]
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * @desc\n *\n * @lineNumber\n * 29\n * @param\n * {number} value\n * @param\n * {number} srcScale\n * @return\n * {number}\n ",
+            "start": 1060,
+            "end": 1182,
+            "loc": {
+              "start": {
+                "line": 56,
+                "column": 0,
+                "index": 1060
+              },
+              "end": {
+                "line": 67,
+                "column": 3,
+                "index": 1182
+              }
+            }
+          }
+        ],
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * @desc\n *\n * @lineNumber\n * 22\n * @param\n * {number} value\n * @param\n * {boolean} round\n * @return\n * {number}\n ",
+            "start": 798,
+            "end": 918,
+            "loc": {
+              "start": {
+                "line": 41,
+                "column": 0,
+                "index": 798
+              },
+              "end": {
+                "line": 52,
+                "column": 3,
+                "index": 918
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 1183,
+        "end": 1326,
+        "loc": {
+          "start": {
+            "line": 68,
+            "column": 0,
+            "index": 1183
+          },
+          "end": {
+            "line": 70,
+            "column": 1,
+            "index": 1326
+          }
+        },
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "FunctionDeclaration",
+          "start": 1190,
+          "end": 1326,
+          "loc": {
+            "start": {
+              "line": 68,
+              "column": 7,
+              "index": 1190
+            },
+            "end": {
+              "line": 70,
+              "column": 1,
+              "index": 1326
+            }
+          },
+          "id": {
+            "type": "Identifier",
+            "start": 1199,
+            "end": 1225,
+            "loc": {
+              "start": {
+                "line": 68,
+                "column": 16,
+                "index": 1199
+              },
+              "end": {
+                "line": 68,
+                "column": 42,
+                "index": 1225
+              },
+              "identifierName": "toMpegTsClockFromTimescale"
+            },
+            "name": "toMpegTsClockFromTimescale"
+          },
+          "generator": false,
+          "async": false,
+          "params": [
+            {
+              "type": "Identifier",
+              "start": 1226,
+              "end": 1231,
+              "loc": {
+                "start": {
+                  "line": 68,
+                  "column": 43,
+                  "index": 1226
+                },
+                "end": {
+                  "line": 68,
+                  "column": 48,
+                  "index": 1231
+                },
+                "identifierName": "value"
+              },
+              "name": "value"
+            },
+            {
+              "type": "AssignmentPattern",
+              "start": 1233,
+              "end": 1245,
+              "loc": {
+                "start": {
+                  "line": 68,
+                  "column": 50,
+                  "index": 1233
+                },
+                "end": {
+                  "line": 68,
+                  "column": 62,
+                  "index": 1245
+                }
+              },
+              "left": {
+                "type": "Identifier",
+                "start": 1233,
+                "end": 1241,
+                "loc": {
+                  "start": {
+                    "line": 68,
+                    "column": 50,
+                    "index": 1233
+                  },
+                  "end": {
+                    "line": 68,
+                    "column": 58,
+                    "index": 1241
+                  },
+                  "identifierName": "srcScale"
+                },
+                "name": "srcScale"
+              },
+              "right": {
+                "type": "NumericLiteral",
+                "start": 1244,
+                "end": 1245,
+                "loc": {
+                  "start": {
+                    "line": 68,
+                    "column": 61,
+                    "index": 1244
+                  },
+                  "end": {
+                    "line": 68,
+                    "column": 62,
+                    "index": 1245
+                  }
+                },
+                "extra": {
+                  "rawValue": 1,
+                  "raw": "1"
+                },
+                "value": 1
+              }
+            }
+          ],
+          "body": {
+            "type": "BlockStatement",
+            "start": 1247,
+            "end": 1326,
+            "loc": {
+              "start": {
+                "line": 68,
+                "column": 64,
+                "index": 1247
+              },
+              "end": {
+                "line": 70,
+                "column": 1,
+                "index": 1326
+              }
+            },
+            "body": [
+              {
+                "type": "ReturnStatement",
+                "start": 1253,
+                "end": 1324,
+                "loc": {
+                  "start": {
+                    "line": 69,
+                    "column": 4,
+                    "index": 1253
+                  },
+                  "end": {
+                    "line": 69,
+                    "column": 75,
+                    "index": 1324
+                  }
+                },
+                "argument": {
+                  "type": "CallExpression",
+                  "start": 1260,
+                  "end": 1323,
+                  "loc": {
+                    "start": {
+                      "line": 69,
+                      "column": 11,
+                      "index": 1260
+                    },
+                    "end": {
+                      "line": 69,
+                      "column": 74,
+                      "index": 1323
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 1260,
+                    "end": 1279,
+                    "loc": {
+                      "start": {
+                        "line": 69,
+                        "column": 11,
+                        "index": 1260
+                      },
+                      "end": {
+                        "line": 69,
+                        "column": 30,
+                        "index": 1279
+                      },
+                      "identifierName": "toTimescaleFromBase"
+                    },
+                    "name": "toTimescaleFromBase"
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "start": 1280,
+                      "end": 1285,
+                      "loc": {
+                        "start": {
+                          "line": 69,
+                          "column": 31,
+                          "index": 1280
+                        },
+                        "end": {
+                          "line": 69,
+                          "column": 36,
+                          "index": 1285
+                        },
+                        "identifierName": "value"
+                      },
+                      "name": "value"
+                    },
+                    {
+                      "type": "Identifier",
+                      "start": 1287,
+                      "end": 1308,
+                      "loc": {
+                        "start": {
+                          "line": 69,
+                          "column": 38,
+                          "index": 1287
+                        },
+                        "end": {
+                          "line": 69,
+                          "column": 59,
+                          "index": 1308
+                        },
+                        "identifierName": "MPEG_TS_CLOCK_FREQ_HZ"
+                      },
+                      "name": "MPEG_TS_CLOCK_FREQ_HZ"
+                    },
+                    {
+                      "type": "BinaryExpression",
+                      "start": 1310,
+                      "end": 1322,
+                      "loc": {
+                        "start": {
+                          "line": 69,
+                          "column": 61,
+                          "index": 1310
+                        },
+                        "end": {
+                          "line": 69,
+                          "column": 73,
+                          "index": 1322
+                        }
+                      },
+                      "left": {
+                        "type": "NumericLiteral",
+                        "start": 1310,
+                        "end": 1311,
+                        "loc": {
+                          "start": {
+                            "line": 69,
+                            "column": 61,
+                            "index": 1310
+                          },
+                          "end": {
+                            "line": 69,
+                            "column": 62,
+                            "index": 1311
+                          }
+                        },
+                        "extra": {
+                          "rawValue": 1,
+                          "raw": "1"
+                        },
+                        "value": 1
+                      },
+                      "operator": "/",
+                      "right": {
+                        "type": "Identifier",
+                        "start": 1314,
+                        "end": 1322,
+                        "loc": {
+                          "start": {
+                            "line": 69,
+                            "column": 65,
+                            "index": 1314
+                          },
+                          "end": {
+                            "line": 69,
+                            "column": 73,
+                            "index": 1322
+                          },
+                          "identifierName": "srcScale"
+                        },
+                        "name": "srcScale"
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "directives": []
+          },
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * @desc\n *\n * @lineNumber\n * 29\n * @param\n * {number} value\n * @param\n * {number} srcScale\n * @return\n * {number}\n ",
+              "start": 1060,
+              "end": 1182,
+              "loc": {
+                "start": {
+                  "line": 56,
+                  "column": 0,
+                  "index": 1060
+                },
+                "end": {
+                  "line": 67,
+                  "column": 3,
+                  "index": 1182
+                }
+              }
+            }
+          ],
+          "trailingComments": []
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * @desc\n *\n * @lineNumber\n * 29\n * @param\n * {number} value\n * @param\n * {number} srcScale\n * @return\n * {number}\n ",
+            "start": 1060,
+            "end": 1182,
+            "loc": {
+              "start": {
+                "line": 56,
+                "column": 0,
+                "index": 1060
+              },
+              "end": {
+                "line": 67,
+                "column": 3,
+                "index": 1182
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @desc\n *\n * @lineNumber\n * 3\n * @param\n * {undefined} value\n * @param\n * {number} destScale\n * @param\n * {number} srcBase\n * @param\n * {boolean} round\n * @return\n * {number}\n ",
+      "start": 37,
+      "end": 221,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0,
+          "index": 37
+        },
+        "end": {
+          "line": 17,
+          "column": 3,
+          "index": 221
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " equivalent to `(value * scale) / (1 / base)`",
+      "start": 354,
+      "end": 401,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 48,
+          "index": 354
+        },
+        "end": {
+          "line": 19,
+          "column": 95,
+          "index": 401
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @desc\n *\n * @lineNumber\n * 13\n * @param\n * {undefined} value\n * @param\n * {number} destScale\n * @param\n * {number} srcScale\n * @param\n * {boolean} round\n * @return\n * {number}\n ",
+      "start": 452,
+      "end": 638,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 0,
+          "index": 452
+        },
+        "end": {
+          "line": 37,
+          "column": 3,
+          "index": 638
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @desc\n *\n * @lineNumber\n * 22\n * @param\n * {number} value\n * @param\n * {boolean} round\n * @return\n * {number}\n ",
+      "start": 798,
+      "end": 918,
+      "loc": {
+        "start": {
+          "line": 41,
+          "column": 0,
+          "index": 798
+        },
+        "end": {
+          "line": 52,
+          "column": 3,
+          "index": 918
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @desc\n *\n * @lineNumber\n * 29\n * @param\n * {number} value\n * @param\n * {number} srcScale\n * @return\n * {number}\n ",
+      "start": 1060,
+      "end": 1182,
+      "loc": {
+        "start": {
+          "line": 56,
+          "column": 0,
+          "index": 1060
+        },
+        "end": {
+          "line": 67,
+          "column": 3,
+          "index": 1182
+        }
+      }
+    }
+  ]
+}

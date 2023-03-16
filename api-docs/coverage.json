@@ -1,0 +1,737 @@
+{
+  "coverage": "89.48%",
+  "expectCount": 1960,
+  "actualCount": 1754,
+  "files": {
+    "src/config.ts": {
+      "expectCount": 4,
+      "actualCount": 3,
+      "undocumentLines": [
+        20
+      ]
+    },
+    "src/controller/abr-controller.ts": {
+      "expectCount": 25,
+      "actualCount": 24,
+      "undocumentLines": [
+        90
+      ]
+    },
+    "src/controller/audio-stream-controller.ts": {
+      "expectCount": 52,
+      "actualCount": 38,
+      "undocumentLines": [
+        14,
+        95,
+        188,
+        189,
+        195,
+        202,
+        205,
+        325,
+        446,
+        466,
+        561,
+        647,
+        696,
+        921
+      ]
+    },
+    "src/controller/audio-track-controller.ts": {
+      "expectCount": 26,
+      "actualCount": 24,
+      "undocumentLines": [
+        60,
+        154
+      ]
+    },
+    "src/controller/base-playlist-controller.ts": {
+      "expectCount": 20,
+      "actualCount": 19,
+      "undocumentLines": [
+        71
+      ]
+    },
+    "src/controller/base-stream-controller.ts": {
+      "expectCount": 85,
+      "actualCount": 83,
+      "undocumentLines": [
+        16,
+        267
+      ]
+    },
+    "src/controller/buffer-controller.ts": {
+      "expectCount": 53,
+      "actualCount": 50,
+      "undocumentLines": [
+        8,
+        9,
+        143
+      ]
+    },
+    "src/controller/buffer-operation-queue.ts": {
+      "expectCount": 10,
+      "actualCount": 9,
+      "undocumentLines": [
+        31
+      ]
+    },
+    "src/controller/cap-level-controller.ts": {
+      "expectCount": 29,
+      "actualCount": 28,
+      "undocumentLines": [
+        78
+      ]
+    },
+    "src/controller/cmcd-controller.ts": {
+      "expectCount": 35,
+      "actualCount": 34,
+      "undocumentLines": [
+        112
+      ]
+    },
+    "src/controller/eme-controller.ts": {
+      "expectCount": 56,
+      "actualCount": 52,
+      "undocumentLines": [
+        17,
+        18,
+        1229,
+        146
+      ]
+    },
+    "src/controller/fps-controller.ts": {
+      "expectCount": 17,
+      "actualCount": 16,
+      "undocumentLines": [
+        79
+      ]
+    },
+    "src/controller/fragment-finders.ts": {
+      "expectCount": 5,
+      "actualCount": 5,
+      "undocumentLines": []
+    },
+    "src/controller/fragment-tracker.ts": {
+      "expectCount": 31,
+      "actualCount": 30,
+      "undocumentLines": [
+        72
+      ]
+    },
+    "src/controller/gap-controller.ts": {
+      "expectCount": 21,
+      "actualCount": 16,
+      "undocumentLines": [
+        5,
+        6,
+        7,
+        8,
+        93
+      ]
+    },
+    "src/controller/id3-track-controller.ts": {
+      "expectCount": 23,
+      "actualCount": 20,
+      "undocumentLines": [
+        6,
+        21,
+        102
+      ]
+    },
+    "src/controller/latency-controller.ts": {
+      "expectCount": 28,
+      "actualCount": 27,
+      "undocumentLines": [
+        75
+      ]
+    },
+    "src/controller/level-controller.ts": {
+      "expectCount": 34,
+      "actualCount": 31,
+      "undocumentLines": [
+        11,
+        71,
+        646
+      ]
+    },
+    "src/controller/level-helper.ts": {
+      "expectCount": 14,
+      "actualCount": 14,
+      "undocumentLines": []
+    },
+    "src/controller/stream-controller.ts": {
+      "expectCount": 79,
+      "actualCount": 64,
+      "undocumentLines": [
+        12,
+        135,
+        208,
+        216,
+        225,
+        232,
+        233,
+        430,
+        440,
+        685,
+        719,
+        787,
+        867,
+        988,
+        1075
+      ]
+    },
+    "src/controller/subtitle-stream-controller.ts": {
+      "expectCount": 36,
+      "actualCount": 25,
+      "undocumentLines": [
+        10,
+        52,
+        116,
+        118,
+        159,
+        248,
+        293,
+        373,
+        522,
+        527,
+        559
+      ]
+    },
+    "src/controller/subtitle-track-controller.ts": {
+      "expectCount": 39,
+      "actualCount": 37,
+      "undocumentLines": [
+        108,
+        299
+      ]
+    },
+    "src/controller/timeline-controller.ts": {
+      "expectCount": 51,
+      "actualCount": 50,
+      "undocumentLines": [
+        184
+      ]
+    },
+    "src/crypt/aes-crypto.ts": {
+      "expectCount": 5,
+      "actualCount": 4,
+      "undocumentLines": [
+        26
+      ]
+    },
+    "src/crypt/aes-decryptor.ts": {
+      "expectCount": 18,
+      "actualCount": 17,
+      "undocumentLines": [
+        130
+      ]
+    },
+    "src/crypt/decrypter.ts": {
+      "expectCount": 23,
+      "actualCount": 21,
+      "undocumentLines": [
+        7,
+        92
+      ]
+    },
+    "src/crypt/fast-aes-key.ts": {
+      "expectCount": 5,
+      "actualCount": 4,
+      "undocumentLines": [
+        24
+      ]
+    },
+    "src/demux/aacdemuxer.ts": {
+      "expectCount": 9,
+      "actualCount": 7,
+      "undocumentLines": [
+        33,
+        54
+      ]
+    },
+    "src/demux/adts.ts": {
+      "expectCount": 12,
+      "actualCount": 12,
+      "undocumentLines": []
+    },
+    "src/demux/base-audio-demuxer.ts": {
+      "expectCount": 18,
+      "actualCount": 18,
+      "undocumentLines": []
+    },
+    "src/demux/chunk-cache.ts": {
+      "expectCount": 7,
+      "actualCount": 7,
+      "undocumentLines": []
+    },
+    "src/demux/dummy-demuxed-track.ts": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/demux/exp-golomb.ts": {
+      "expectCount": 21,
+      "actualCount": 20,
+      "undocumentLines": [
+        48
+      ]
+    },
+    "src/demux/id3.ts": {
+      "expectCount": 17,
+      "actualCount": 7,
+      "undocumentLines": [
+        95,
+        103,
+        131,
+        172,
+        181,
+        192,
+        216,
+        239,
+        263,
+        319
+      ]
+    },
+    "src/demux/mp3demuxer.ts": {
+      "expectCount": 6,
+      "actualCount": 5,
+      "undocumentLines": [
+        31
+      ]
+    },
+    "src/demux/mp4demuxer.ts": {
+      "expectCount": 19,
+      "actualCount": 17,
+      "undocumentLines": [
+        7,
+        76
+      ]
+    },
+    "src/demux/mpegaudio.ts": {
+      "expectCount": 11,
+      "actualCount": 6,
+      "undocumentLines": [
+        1,
+        2,
+        9,
+        12,
+        42
+      ]
+    },
+    "src/demux/sample-aes.ts": {
+      "expectCount": 11,
+      "actualCount": 10,
+      "undocumentLines": [
+        31
+      ]
+    },
+    "src/demux/transmuxer-interface.ts": {
+      "expectCount": 22,
+      "actualCount": 20,
+      "undocumentLines": [
+        8,
+        103
+      ]
+    },
+    "src/demux/transmuxer-worker.ts": {
+      "expectCount": 5,
+      "actualCount": 5,
+      "undocumentLines": []
+    },
+    "src/demux/transmuxer.ts": {
+      "expectCount": 48,
+      "actualCount": 43,
+      "undocumentLines": [
+        20,
+        148,
+        563,
+        630,
+        699
+      ]
+    },
+    "src/demux/tsdemuxer.ts": {
+      "expectCount": 43,
+      "actualCount": 41,
+      "undocumentLines": [
+        20,
+        164
+      ]
+    },
+    "src/demux/webworkify-webpack.js": {
+      "expectCount": 11,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        86,
+        87,
+        88,
+        90,
+        94,
+        98,
+        131,
+        136,
+        168,
+        173
+      ]
+    },
+    "src/hls.ts": {
+      "expectCount": 92,
+      "actualCount": 92,
+      "undocumentLines": []
+    },
+    "src/is-supported.ts": {
+      "expectCount": 3,
+      "actualCount": 3,
+      "undocumentLines": []
+    },
+    "src/loader/date-range.ts": {
+      "expectCount": 14,
+      "actualCount": 13,
+      "undocumentLines": [
+        58
+      ]
+    },
+    "src/loader/fragment-loader.ts": {
+      "expectCount": 16,
+      "actualCount": 13,
+      "undocumentLines": [
+        2,
+        36,
+        375
+      ]
+    },
+    "src/loader/fragment.ts": {
+      "expectCount": 64,
+      "actualCount": 61,
+      "undocumentLines": [
+        64,
+        417,
+        652
+      ]
+    },
+    "src/loader/key-loader.ts": {
+      "expectCount": 15,
+      "actualCount": 14,
+      "undocumentLines": [
+        33
+      ]
+    },
+    "src/loader/level-details.ts": {
+      "expectCount": 55,
+      "actualCount": 53,
+      "undocumentLines": [
+        1,
+        372
+      ]
+    },
+    "src/loader/level-key.ts": {
+      "expectCount": 17,
+      "actualCount": 15,
+      "undocumentLines": [
+        6,
+        103
+      ]
+    },
+    "src/loader/load-stats.ts": {
+      "expectCount": 10,
+      "actualCount": 10,
+      "undocumentLines": []
+    },
+    "src/loader/m3u8-parser.ts": {
+      "expectCount": 18,
+      "actualCount": 14,
+      "undocumentLines": [
+        10,
+        11,
+        12,
+        19
+      ]
+    },
+    "src/loader/playlist-loader.ts": {
+      "expectCount": 28,
+      "actualCount": 27,
+      "undocumentLines": [
+        83
+      ]
+    },
+    "src/performance/performance-monitor.ts": {
+      "expectCount": 6,
+      "actualCount": 5,
+      "undocumentLines": [
+        27
+      ]
+    },
+    "src/polyfills/number.ts": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        5
+      ]
+    },
+    "src/remux/aac-helper.ts": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "src/remux/mp4-generator.ts": {
+      "expectCount": 38,
+      "actualCount": 38,
+      "undocumentLines": []
+    },
+    "src/remux/mp4-remuxer.ts": {
+      "expectCount": 46,
+      "actualCount": 38,
+      "undocumentLines": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        111,
+        1138,
+        1194
+      ]
+    },
+    "src/remux/passthrough-remuxer.ts": {
+      "expectCount": 15,
+      "actualCount": 15,
+      "undocumentLines": []
+    },
+    "src/task-loop.ts": {
+      "expectCount": 17,
+      "actualCount": 16,
+      "undocumentLines": [
+        61
+      ]
+    },
+    "src/types/cmcd.ts": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/types/level.ts": {
+      "expectCount": 33,
+      "actualCount": 30,
+      "undocumentLines": [
+        1,
+        65,
+        254
+      ]
+    },
+    "src/types/transmuxer.ts": {
+      "expectCount": 11,
+      "actualCount": 10,
+      "undocumentLines": [
+        82
+      ]
+    },
+    "src/utils/attr-list.ts": {
+      "expectCount": 14,
+      "actualCount": 10,
+      "undocumentLines": [
+        1,
+        2,
+        12,
+        18
+      ]
+    },
+    "src/utils/binary-search.ts": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "src/utils/buffer-helper.ts": {
+      "expectCount": 6,
+      "actualCount": 5,
+      "undocumentLines": [
+        11
+      ]
+    },
+    "src/utils/cea-608-parser.ts": {
+      "expectCount": 138,
+      "actualCount": 123,
+      "undocumentLines": [
+        151,
+        152,
+        154,
+        164,
+        173,
+        183,
+        192,
+        252,
+        311,
+        350,
+        443,
+        567,
+        817,
+        1206,
+        1634
+      ]
+    },
+    "src/utils/chunker.ts": {
+      "expectCount": 5,
+      "actualCount": 4,
+      "undocumentLines": [
+        26
+      ]
+    },
+    "src/utils/codecs.ts": {
+      "expectCount": 3,
+      "actualCount": 2,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/utils/cues.ts": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5
+      ]
+    },
+    "src/utils/discontinuities.ts": {
+      "expectCount": 9,
+      "actualCount": 9,
+      "undocumentLines": []
+    },
+    "src/utils/ewma-bandwidth-estimator.ts": {
+      "expectCount": 12,
+      "actualCount": 11,
+      "undocumentLines": [
+        61
+      ]
+    },
+    "src/utils/ewma.ts": {
+      "expectCount": 9,
+      "actualCount": 8,
+      "undocumentLines": [
+        50
+      ]
+    },
+    "src/utils/fetch-loader.ts": {
+      "expectCount": 25,
+      "actualCount": 23,
+      "undocumentLines": [
+        368,
+        117
+      ]
+    },
+    "src/utils/hex.ts": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/utils/imsc1-ttml-parser.ts": {
+      "expectCount": 15,
+      "actualCount": 11,
+      "undocumentLines": [
+        7,
+        9,
+        11,
+        12
+      ]
+    },
+    "src/utils/keysystem-util.ts": {
+      "expectCount": 4,
+      "actualCount": 4,
+      "undocumentLines": []
+    },
+    "src/utils/logger.ts": {
+      "expectCount": 7,
+      "actualCount": 3,
+      "undocumentLines": [
+        1,
+        2,
+        10,
+        84
+      ]
+    },
+    "src/utils/mediakeys-helper.ts": {
+      "expectCount": 7,
+      "actualCount": 6,
+      "undocumentLines": [
+        108
+      ]
+    },
+    "src/utils/mediasource-helper.ts": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/utils/mp4-tools.ts": {
+      "expectCount": 28,
+      "actualCount": 25,
+      "undocumentLines": [
+        6,
+        7,
+        16
+      ]
+    },
+    "src/utils/numeric-encoding-utils.ts": {
+      "expectCount": 6,
+      "actualCount": 6,
+      "undocumentLines": []
+    },
+    "src/utils/output-filter.ts": {
+      "expectCount": 11,
+      "actualCount": 10,
+      "undocumentLines": [
+        56
+      ]
+    },
+    "src/utils/texttrack-utils.ts": {
+      "expectCount": 6,
+      "actualCount": 6,
+      "undocumentLines": []
+    },
+    "src/utils/time-ranges.ts": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/utils/timescale-conversion.ts": {
+      "expectCount": 5,
+      "actualCount": 4,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "src/utils/typed-array.ts": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/utils/vttparser.ts": {
+      "expectCount": 27,
+      "actualCount": 25,
+      "undocumentLines": [
+        234,
+        237
+      ]
+    },
+    "src/utils/webvtt-parser.ts": {
+      "expectCount": 7,
+      "actualCount": 2,
+      "undocumentLines": [
+        5,
+        7,
+        10,
+        29,
+        54
+      ]
+    },
+    "src/utils/xhr-loader.ts": {
+      "expectCount": 21,
+      "actualCount": 19,
+      "undocumentLines": [
+        3,
+        84
+      ]
+    }
+  }
+}

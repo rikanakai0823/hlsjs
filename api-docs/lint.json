@@ -1,0 +1,28 @@
+[
+  {
+    "name": "MP4.moov",
+    "filePath": "src/remux/mp4-generator.ts",
+    "lines": [
+      {
+        "lineNumber": 512,
+        "line": "      0x00,"
+      },
+      {
+        "lineNumber": 513,
+        "line": "      0x00,"
+      },
+      {
+        "lineNumber": 514,
+        "line": "      0x00,"
+      },
+      {
+        "lineNumber": 515,
+        "line": "      0x00,"
+      }
+    ],
+    "codeParams": [
+      "tracks"
+    ],
+    "docParams": []
+  }
+]
